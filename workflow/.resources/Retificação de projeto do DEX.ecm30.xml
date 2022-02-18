@@ -29,7 +29,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Retificação de projeto do Departamento Executivo</processId>
-      <version>17</version>
+      <version>19</version>
     </processDefinitionVersionPK>
     <versionDescription>Nova Versão.</versionDescription>
     <formId>4113</formId>
@@ -40,7 +40,7 @@
     <blockedVersion>false</blockedVersion>
     <counterSign>false</counterSign>
     <openInstances>0</openInstances>
-    <bpmnVersion>1</bpmnVersion>
+    <bpmnVersion>2</bpmnVersion>
     <processStates/>
     <favorito>false</favorito>
     <inheritFormSecurity>false</inheritFormSecurity>
@@ -283,8 +283,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>140</positionX>
-      <positionY>770</positionY>
+      <positionX>70</positionX>
+      <positionY>730</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -335,8 +335,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>730</positionX>
-      <positionY>830</positionY>
+      <positionX>580</positionX>
+      <positionY>730</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -414,6 +414,501 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <version>1</version>
+        <sequence>56</sequence>
+      </processStatePK>
+      <stateName>Erro ao obter assinantes</stateName>
+      <stateDescription>Erro ao obter assinantes</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;27&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>80</positionX>
+      <positionY>1010</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <sequence>57</sequence>
+      </processStatePK>
+      <stateName>Erro ao realizar upload</stateName>
+      <stateDescription>Erro ao realizar upload</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;27&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>290</positionX>
+      <positionY>1000</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <sequence>58</sequence>
+      </processStatePK>
+      <stateName>Erro ao anexar</stateName>
+      <stateDescription>Erro ao anexar</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;27&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>720</positionX>
+      <positionY>1000</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <sequence>60</sequence>
+      </processStatePK>
+      <stateName>Obtem assinantes e envia pedido para Vert</stateName>
+      <stateDescription>Obtem assinantes e envia pedido para Vert</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>80</positionX>
+      <positionY>877</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <sequence>62</sequence>
+      </processStatePK>
+      <stateName>Anexa documento Assinado</stateName>
+      <stateDescription>Anexa documento Assinado</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>720</positionX>
+      <positionY>880</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <sequence>65</sequence>
+      </processStatePK>
+      <stateName>Realizar upload do pedido</stateName>
+      <stateDescription>Realizar upload do pedido</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>300</positionX>
+      <positionY>890</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <sequence>59</sequence>
+      </processStatePK>
+      <stateName>Aguardando assinaturas</stateName>
+      <stateDescription>Aguardando assinaturas</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>540</positionX>
+      <positionY>904</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>35</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <sequence>63</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>156</positionX>
+      <positionY>960</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>60</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <sequence>64</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>810</positionX>
+      <positionY>930</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>62</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <sequence>66</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>390</positionX>
+      <positionY>930</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>65</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
         <sequence>17</sequence>
       </processStatePK>
       <stateName>Validado?</stateName>
@@ -449,8 +944,8 @@
       <subProcessId></subProcessId>
       <formFolder>0</formFolder>
       <automatic>true</automatic>
-      <positionX>530</positionX>
-      <positionY>810</positionY>
+      <positionX>370</positionX>
+      <positionY>720</positionY>
       <inhibitTransfer>false</inhibitTransfer>
       <stateType>1</stateType>
       <bpmnType>120</bpmnType>
@@ -474,7 +969,7 @@
       <subProcessId></subProcessId>
       <formFolder>0</formFolder>
       <automatic>true</automatic>
-      <positionX>860</positionX>
+      <positionX>820</positionX>
       <positionY>720</positionY>
       <inhibitTransfer>false</inhibitTransfer>
       <stateType>1</stateType>
@@ -524,8 +1019,8 @@
       <subProcessId></subProcessId>
       <formFolder>0</formFolder>
       <automatic>true</automatic>
-      <positionX>345</positionX>
-      <positionY>464</positionY>
+      <positionX>350</positionX>
+      <positionY>450</positionY>
       <inhibitTransfer>false</inhibitTransfer>
       <stateType>1</stateType>
       <bpmnType>120</bpmnType>
@@ -563,8 +1058,8 @@
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>290</positionX>
-      <positionY>870</positionY>
+      <positionX>260</positionX>
+      <positionY>720</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -610,8 +1105,8 @@
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>980</positionX>
-      <positionY>730</positionY>
+      <positionX>950</positionX>
+      <positionY>903</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -657,8 +1152,8 @@
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>950</positionX>
-      <positionY>860</positionY>
+      <positionX>980</positionX>
+      <positionY>750</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -682,7 +1177,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>17</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -695,7 +1190,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>17</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -709,7 +1204,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>21</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -722,7 +1217,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>21</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -736,7 +1231,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>3</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>21</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -748,11 +1243,11 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>29</sequence>
       </conditionProcessStatePK>
       <condition></condition>
-      <destinationSequenceId>52</destinationSequenceId>
+      <destinationSequenceId>60</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
     <ConditionProcessState>
@@ -760,7 +1255,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>29</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -774,7 +1269,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>3</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>29</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -786,7 +1281,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>39</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -799,7 +1294,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>39</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -812,7 +1307,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>3</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>39</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -826,7 +1321,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>43</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -839,7 +1334,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>17</version>
+        <version>19</version>
         <sequence>43</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1212,23 +1707,6 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <version>1</version>
-        <linkSequence>53</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>29</initialStateSequence>
-      <finalStateSequence>52</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name>Sim</name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>Retificação de projeto do DEX</processId>
-        <version>1</version>
         <linkSequence>55</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
@@ -1241,9 +1719,327 @@
       <defaultLink>false</defaultLink>
       <type>0</type>
     </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>67</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>63</initialStateSequence>
+      <finalStateSequence>56</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>68</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>56</initialStateSequence>
+      <finalStateSequence>60</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>69</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>66</initialStateSequence>
+      <finalStateSequence>57</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>70</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>57</initialStateSequence>
+      <finalStateSequence>65</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>71</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>65</initialStateSequence>
+      <finalStateSequence>59</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>72</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>59</initialStateSequence>
+      <finalStateSequence>62</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>73</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>64</initialStateSequence>
+      <finalStateSequence>58</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>74</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>58</initialStateSequence>
+      <finalStateSequence>62</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>75</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>62</initialStateSequence>
+      <finalStateSequence>52</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>76</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>60</initialStateSequence>
+      <finalStateSequence>65</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+        <linkSequence>77</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>29</initialStateSequence>
+      <finalStateSequence>60</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
   </list>
   <list/>
   <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS BEFORESAVE - INICIO&quot;)&#xd;
+    // var docs = hAPI.listAttachments();&#xd;
+    // var solicitacao = getValue(&quot;WKNumProces&quot;);&#xd;
+    var atividade = getValue(&quot;WKNumState&quot;)&#xd;
+&#xd;
+    if (atividade==27){&#xd;
+        hAPI.attachDocument(hAPI.getCardValue(&quot;doc_id&quot;));&#xd;
+    }&#xd;
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS BEFORESAVE - FIM&quot;)&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>intermediateconditional59</eventId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function intermediateconditional59() {
+	var solicitacao = getValue(&quot;WKNumProces&quot;);
+	var finalizado  = false;
+	
+	var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);
+	var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
+	
+	if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {
+		if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Assinado&quot;  ||
+			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Rejeitado&quot; ||
+			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Cancelado&quot;){
+			finalizado = true;
+		}
+	} else {
+		log.info(&quot;&gt;&gt;&gt; Não localizado Formulário Auxiliar, irá finalizar com erros&quot;);
+		finalizado = true;
+	}
+	
+	return finalizado;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask65</eventId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask65(attempt, message) {
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK65 - INICIO&quot;)
+	var atividade = getValue(&quot;WKNumState&quot;)
+	var solicitacao = getValue(&quot;WKNumProces&quot;)
+
+    try{
+        DatasetFactory.getDataset(&quot;ds_upload_vertsign&quot;, null, null, null);
+        var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);
+		var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
+
+        if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {
+            var c2 = DatasetFactory.createConstraint(&apos;codArquivo&apos;, form_aux.getValue(0, &apos;codArquivo&apos;), form_aux.getValue(0, &apos;codArquivo&apos;), ConstraintType.MUST);
+			var ds_upload = DatasetFactory.getDataset(&quot;ds_upload_vertsign_manual&quot;, null, [c2], null);
+
+            if (ds_upload){				
+				
+				form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
+				if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {
+					log.info(&quot;&gt;&gt;&gt; Status do Documento: &quot; + form_aux.getValue(0, &quot;statusAssinatura&quot;));	
+					
+					if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Enviando para assinatura&quot;){
+						throw &quot;Houve erros durante o envio do documento, verifique novamente.&quot;;
+					}
+				}
+				
+							
+			} else {
+                throw &quot;Não foi possível localizar Formulário Auxiliar com o código da solicitação&quot;;
+            };
+        }
+    } catch (e){
+        throw (&quot;Erro ao enviar documento para integração: &quot; + (e));
+    }
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK65 - FIM&quot;)
+
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask62</eventId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask62(attempt, message) {
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK62 - INICIO&quot;)
+    var nr_pasta = hAPI.getCardValue(&quot;nr_pasta&quot;);
+    var idDocumento = hAPI.getCardValue(&quot;doc_id&quot;)
+    var solicitacao = getValue(&quot;WKNumProces&quot;)
+    anexaDocumentoAssinado(idDocumento,nr_pasta,solicitacao)
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK62 - FIM&quot;)
+}
+
+function anexaDocumentoAssinado(idDocumento, nr_pasta,nr_solicitacao) {
+    var constraints = [DatasetFactory.createConstraint(&apos;codArquivo&apos;, idDocumento, idDocumento, ConstraintType.MUST)];
+    chaveArquivoAssinado = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, [&quot;chaveArquivo&quot;], constraints, null);
+    constraints = [DatasetFactory.createConstraint(&apos;chaveArquivo&apos;, chaveArquivoAssinado.getValue(0, &apos;chaveArquivo&apos;), chaveArquivoAssinado.getValue(0, &apos;chaveArquivo&apos;), ConstraintType.MUST)];
+    arquivoassinado = DatasetFactory.getDataset(&apos;recuperaDocumentoAssinado_vertsign&apos;, null, constraints, null);
+    
+
+    var nm_arquivo = &quot;solic_&quot; + nr_solicitacao + &quot;_assinado.pdf&quot;;
+    var constraintsDocument = new Array();
+	constraintsDocument.push(DatasetFactory.createConstraint(&quot;nm_arquivo&quot;, nm_arquivo, nm_arquivo, ConstraintType.MUST));
+	constraintsDocument.push(DatasetFactory.createConstraint(&quot;nr_pasta&quot;, nr_pasta, nr_pasta, ConstraintType.MUST));
+	constraintsDocument.push(DatasetFactory.createConstraint(&quot;base64&quot;, arquivoassinado.getValue(0, &apos;arquivo_base64&apos;), arquivoassinado.getValue(0, &apos;arquivo_base64&apos;), ConstraintType.MUST));
+	var dsDocument = DatasetFactory.getDataset(&apos;ds_grava_documento&apos;, null, constraintsDocument, null)
+	dsDocument == &apos;&apos;
+	if (dsDocument != null &amp;&amp; dsDocument != undefined) {
+	      if (dsDocument.values.length &gt; 0) {
+	          documentId = dsDocument.getValue(0, &apos;documentId&apos;);
+	          documentId = replaceString(documentId)
+	          hAPI.setCardValue(&quot;doc_id_assinado&quot;,documentId)
+	          hAPI.attachDocument(documentId);
+	      }
+	 }
+}</eventDescription>
+    </WorkflowProcessEvent>
     <WorkflowProcessEvent>
       <workflowProcessEventPK>
         <companyId>1</companyId>
@@ -1291,6 +2087,230 @@
 }
 </eventDescription>
     </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask60</eventId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask60(attempt, message) {
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK60 - INICIO&quot;)
+	var nr_pasta = hAPI.getCardValue(&quot;nr_pasta&quot;);
+	var idDocumento = hAPI.getCardValue(&quot;doc_id&quot;)
+	var solicitacao = getValue(&quot;WKNumProces&quot;)
+	var nm_Arquivo = &quot;solic_&quot; + solicitacao + &quot;_assinado.pdf&quot;;
+	
+	var data = new Date().toLocaleDateString(&apos;pt-BR&apos;);
+	var horario = new Date().toLocaleTimeString(&apos;pt-BR&apos;);
+	
+//	jsonStringify()
+	dadosAssinantes=obterAssinantes()
+	parametrosAssinatura=enviaParaAssinatura(nr_pasta,dadosAssinantes,idDocumento,nm_Arquivo,solicitacao,data,horario)
+	rodarDataset(parametrosAssinatura)
+	log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK60 - FIM&quot;)
+}
+
+function obterAssinantes(){
+    var solicitacao = getValue(&quot;WKNumProces&quot;)
+    var arraySigners = [];
+    var emails=[]
+    var atividades = [19,27];
+    var responsavelEnvio = &apos;&apos;
+    var nomeResponsavelEnvio = &apos;&apos;
+    var processInstanceId = DatasetFactory.createConstraint(&apos;processInstanceId&apos;, solicitacao, solicitacao, ConstraintType.MUST);
+    
+    for (var i = 0; i &lt; atividades.length; i++) {
+    	var constraints = new Array();
+        var userMail = &apos;&apos;
+
+        // Busca a atividade inserida
+    	var choosedSequence = DatasetFactory.createConstraint(&apos;choosedSequence&apos;, atividades[i], atividades[i], ConstraintType.MUST);
+        
+        // Busca o id do usuário responsavel por uma tarefa
+        constraints.push(processInstanceId)
+        constraints.push(choosedSequence)
+        var retornoProcessTask = DatasetFactory.getDataset(&apos;processTask&apos;, [&quot;choosedColleagueId&quot;], constraints, null);
+
+        if (retornoProcessTask &amp;&amp; retornoProcessTask.rowsCount &gt; 0) {	
+			userId = retornoProcessTask.getValue(retornoProcessTask.rowsCount-1, &quot;choosedColleagueId&quot;);
+		}
+        if(userId == null || userId == &quot;&quot;){
+    		log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK84 - USERID&quot;)
+            throw &quot;RETIFICAÇÃO DE PROCESSOS TASK60&quot;
+    	}
+
+        // Busca o email do usuário através do ID dele
+        constraints = [DatasetFactory.createConstraint(&quot;colleagueId&quot;, userId, userId, ConstraintType.MUST)];
+        var retornoColleague = DatasetFactory.getDataset(&apos;colleague&apos;, [&quot;mail&quot;], constraints, null);
+
+        if (retornoColleague &amp;&amp; retornoColleague.rowsCount &gt; 0) {
+			userMail = retornoColleague.getValue(0, &quot;mail&quot;);
+		}
+        if(userMail == null || userMail == &quot;&quot;){
+    		log.info(&quot;#### &gt;&gt; ENCERRAMENTO DE PROCESSOS TASK60 - USERMAIL&quot;)
+            throw &quot;ENCERRAMENTO DE PROCESSOS TASK60&quot;
+    	}
+        
+        if(emails.indexOf(String(userMail))==-1){
+        	emails.push(String(userMail))
+        	constraints = []
+	        constraints = [DatasetFactory.createConstraint(&apos;email&apos;, userMail, userMail, ConstraintType.MUST)];
+	        assinante = DatasetFactory.getDataset(&apos;ds_busca_assinante&apos;, null, constraints, null);
+	        
+	        arraySigners.push({
+	            nome: new String(assinante.getValue(0, &apos;nome&apos;)),
+	            email: new String(userMail),
+	            cpf: new String(assinante.getValue(0, &apos;cpf&apos;)),
+	            tipo: new String(assinante.getValue(0, &apos;tipoAssinatura&apos;)),
+	            status: &quot;Pendente&quot;
+	        });
+	        responsavelEnvio = userId
+	        nomeResponsavelEnvio = assinante.getValue(0, &apos;nome&apos;)
+        }
+    }
+    if (arraySigners.length == 0) {
+        log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK60 - ARRAYSIGNERS&quot;)
+        throw &quot;erro&quot;
+    }
+
+    var retorno = {
+    	&quot;assinantes&quot;:arraySigners,
+    	&quot;idReponsavelEnvio&quot;:responsavelEnvio,
+    	&quot;nomeResponsavelEnvio&quot;:nomeResponsavelEnvio
+    }
+    return retorno
+}
+
+function enviaParaAssinatura(nr_pasta, dadosResponsavel, idDocumento, nm_Arquivo, numeroProcesso,data,horario) {
+    // Cria registro de formulario
+    var nmArquivo = {
+        name: &quot;nmArquivo&quot;,
+        value: nm_Arquivo
+    };
+    var codArquivo = {
+        name: &quot;codArquivo&quot;,
+        value: idDocumento
+    };
+    var vrArquivo = {
+        name: &quot;vrArquivo&quot;,
+        value: &apos;1000&apos;
+    };
+    var codPasta = {
+        name: &quot;codPasta&quot;,
+        value: nr_pasta
+    };
+    var codRemetente = {
+        name: &quot;codRemetente&quot;,
+        value: dadosResponsavel.idReponsavelEnvio
+    };
+    var nmRemetente = {
+        name: &quot;nmRemetente&quot;,
+        value: dadosResponsavel.nomeResponsavelEnvio
+
+    };
+    var formDescription = {
+        name: &quot;formDescription&quot;,
+        value: nm_Arquivo
+    };
+    var status = {
+        name: &quot;status&quot;,
+        value: &quot;Enviando para assinatura&quot;
+    };
+    var metodo = {
+        name: &quot;metodo&quot;,
+        value: &quot;create&quot;
+    };
+
+    var dataEnvio = {
+        name: &quot;dataEnvio&quot;,
+        value: data
+    };
+    var jsonSigners = {
+        name: &quot;jsonSigners&quot;,
+        value: jsonStringify(dadosResponsavel.assinantes)
+    };
+
+    var horaEnvio = {
+        name: &quot;horaEnvio&quot;,
+        value: horario
+    };
+
+    var numSolic = {
+        name: &quot;numSolic&quot;,
+        value: numeroProcesso
+    };
+
+    var choosedState = {
+        name: &quot;choosedState&quot;,
+        value: &quot;45&quot;
+    };
+
+    var constraints = [jsonSigners, nmArquivo, codArquivo, vrArquivo, codPasta, codRemetente, nmRemetente, formDescription, status, metodo, dataEnvio, horaEnvio, numSolic, choosedState];
+    return constraints;
+}
+
+function rodarDataset(params) {
+    constraints = []
+    params.forEach(function (param) {
+        constraints.push(DatasetFactory.createConstraint(param.name, param.value, param.value, ConstraintType.MUST));
+    });
+    if (constraints.length &gt; 0) {
+        var dsAux = DatasetFactory.getDataset(&quot;ds_auxiliar_vertsign&quot;, null, constraints, null);
+        if(dsAux == null || dsAux.rowsCount == null){
+    		throw &quot;Falha de comunicação com a VertSign. &quot;
+    		+ &quot;O TOTVS Fluig não conseguir realizar a comunicação, tente novamente mais tarde&quot;;
+    	}
+        if (dsAux.rowsCount &gt; 0) {
+            if (dsAux.getValue(0, &quot;Result&quot;) === &quot;OK&quot;) {
+            	log.info(&quot;Enviando documento para assinatura&quot;);
+            }
+        }
+    }
+}
+
+function jsonStringify(obj) {
+	if(obj == null) {
+	    return &quot;null&quot;;
+	} else if(Object.prototype.toString.call(obj) === &apos;[object Array]&apos;) {
+	    var str = &quot;[&quot;;
+	    if(obj.length &gt; 0) {
+	      str += jsonStringify(obj[0]);
+	      for(var i = 1; i &lt; obj.length; i++) {
+	        str += &quot;,&quot; + jsonStringify(obj[i]);
+	      }
+	    }
+	    str += &quot;]&quot;;
+	    return str;
+	} else if(Object.prototype.toString.call(obj) === &apos;[object Object]&apos;) {
+	    var str = &quot;{&quot;;
+	    var first = true;
+	    for(attr in obj) {
+	      str += (!first ? &quot;,&quot; : &quot;&quot;) + &quot;\&quot;&quot; + attr + &quot;\&quot;:&quot; + jsonStringify(obj[attr]);
+	      first = false;
+	    }
+	    str += &quot;}&quot;;
+	    return str;
+	} else {
+	    return &quot;\&quot;&quot; + obj + &quot;\&quot;&quot;;
+	}
+};</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>replaceString</eventId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function replaceString(documentId){&#xd;
+	log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS REPLACE - INICIO&quot;)&#xd;
+	var novoDocumentId = new java.lang.String(documentId)&#xd;
+	novoDocumentId = novoDocumentId.replace(&apos;.0&apos;,&apos;&apos;)&#xd;
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS REPLACE - FIM&quot;)&#xd;
+	return novoDocumentId&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
   </list>
   <list/>
   <list>
@@ -1312,7 +2332,7 @@
     </SwimLane>
     <SwimLane>
       <color>ff7a7a</color>
-      <height>150</height>
+      <height>155</height>
       <width>1041</width>
       <positionX>0</positionX>
       <positionY>559</positionY>
@@ -1344,7 +2364,7 @@
     </SwimLane>
     <SwimLane>
       <color>a8ffa3</color>
-      <height>210</height>
+      <height>380</height>
       <width>1041</width>
       <positionX>0</positionX>
       <positionY>711</positionY>
@@ -1382,51 +2402,73 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
         <linkSequence>7</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>253</positionX>
-      <positionY>47</positionY>
+      <positionX>127</positionX>
+      <positionY>211</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
         <linkSequence>20</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>504</positionX>
-      <positionY>766</positionY>
+      <positionX>609</positionX>
+      <positionY>688</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
+        <linkSequence>20</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>123</positionX>
+      <positionY>688</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>19</version>
         <linkSequence>25</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>778</positionX>
-      <positionY>642</positionY>
+      <positionX>459</positionX>
+      <positionY>700</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
         <linkSequence>25</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
       <positionX>754</positionX>
-      <positionY>344</positionY>
+      <positionY>700</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
+        <linkSequence>25</linkSequence>
+        <bendSequence>3</bendSequence>
+      </processLinkBendPK>
+      <positionX>754</positionX>
+      <positionY>107</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>19</version>
         <linkSequence>26</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1437,29 +2479,51 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
+        <linkSequence>26</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>670</positionX>
+      <positionY>126</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>19</version>
         <linkSequence>31</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>853</positionX>
-      <positionY>320</positionY>
+      <positionX>849</positionX>
+      <positionY>79</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
+        <linkSequence>40</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>93</positionX>
+      <positionY>213</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>19</version>
         <linkSequence>42</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>186</positionX>
-      <positionY>369</positionY>
+      <positionX>90</positionX>
+      <positionY>500</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
         <linkSequence>45</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1470,18 +2534,18 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
         <linkSequence>46</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
       <positionX>573</positionX>
-      <positionY>514</positionY>
+      <positionY>501</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
         <linkSequence>46</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1492,29 +2556,40 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
         <linkSequence>47</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>284</positionX>
+      <positionX>253</positionX>
       <positionY>78</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
         <linkSequence>48</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>349</positionX>
-      <positionY>275</positionY>
+      <positionX>494</positionX>
+      <positionY>223</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
+        <version>19</version>
+        <linkSequence>48</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>494</positionX>
+      <positionY>100</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>19</version>
         <linkSequence>49</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1525,29 +2600,78 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
-        <linkSequence>51</linkSequence>
+        <version>19</version>
+        <linkSequence>77</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>456</positionX>
-      <positionY>887</positionY>
+      <positionX>717</positionX>
+      <positionY>821</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>17</version>
-        <linkSequence>55</linkSequence>
-        <bendSequence>1</bendSequence>
+        <version>19</version>
+        <linkSequence>77</linkSequence>
+        <bendSequence>2</bendSequence>
       </processLinkBendPK>
-      <positionX>890</positionX>
-      <positionY>877</positionY>
+      <positionX>135</positionX>
+      <positionY>821</positionY>
     </ProcessLinkBend>
+  </list>
+  <list>
+    <ProcessStateTrigger>
+      <processStateTriggerPK>
+        <companyId>1</companyId>
+        <processId>Retificação de projeto do DEX</processId>
+        <version>19</version>
+        <stateSequence>59</stateSequence>
+        <triggerSequence>0</triggerSequence>
+      </processStateTriggerPK>
+      <runType>0</runType>
+      <type>3</type>
+      <value>Retificação de projeto do DEX.intermediateconditional59.js</value>
+      <timeTrigger>0:0:0</timeTrigger>
+      <frequencia>01</frequencia>
+    </ProcessStateTrigger>
   </list>
   <list/>
   <list/>
-  <list/>
-  <list/>
+  <list>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>Retificação de projeto do DEX</processId>
+      <version>1</version>
+      <sequence>60</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>Retificação de projeto do DEX</processId>
+      <version>1</version>
+      <sequence>62</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>Retificação de projeto do DEX</processId>
+      <version>1</version>
+      <sequence>65</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+  </list>
   <list/>
   <list/>
   <list/>

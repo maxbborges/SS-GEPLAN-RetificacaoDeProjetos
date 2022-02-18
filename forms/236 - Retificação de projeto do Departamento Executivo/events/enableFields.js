@@ -1,5 +1,8 @@
 function enableFields(form) {
     var activity = getValue('WKNumState');
+    if (activity!=10){
+        form.setEnabled('Ajustes_conside', false);
+    }
     if (activity == 19) {
         form.setEnabled('Nome_do_projeto', false);
         form.setEnabled('area_responsave', false);

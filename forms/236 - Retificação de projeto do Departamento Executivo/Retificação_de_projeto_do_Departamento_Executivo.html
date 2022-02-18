@@ -19,44 +19,69 @@
 	<link href='/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css' type='text/css' rel='stylesheet' />
 
 	<link href='./custom/custom.css' type='text/css' rel='stylesheet' />
+	<script src="./custom/jspdf.min.js"></script>
 	<script type="text/javascript" src="./custom/custom.js"></script>
 </head>
 
 <body class="fluig-style-guide">
 	<form class="totvs-form grid vertical create-form-components ui-sortable t0" name="createFormComponents"
 		style="padding-left: 10px; padding-right: 10px;">
+		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="doc_id">
+			<div class="form-input">
+				<div class="form-group">
+					<input type="hidden" class="form-control" name="doc_id" value="" placeholder="" data-size="big">
+				</div>
+			</div>
+		</div>
+		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="doc_id_assinado">
+			<div class="form-input">
+				<div class="form-group">
+					<input type="hidden" class="form-control" name="doc_id_assinado" value="" placeholder=""
+						data-size="big">
+				</div>
+			</div>
+		</div>
+		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="nr_pasta">
+			<div class="form-input">
+				<div class="form-group">
+					<input type="hidden" class="form-control" name="nr_pasta" value="" placeholder="" data-size="big">
+				</div>
+			</div>
+		</div>
 		<h1 class="title-form-application">Retificação de Projetos</h1>
 		<div class="paragraph-is-required system-message-information alert alert-info" role="alert">Todos os campos com
 			* são de preenchimento obrigatório.</div>
-		<div class="panel panel-info" id="div_00">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					<span class="flaticon flaticon-message icon-sm"></span>
-					Abertura
-				</h3>
-			</div>
-			<div id="abertura" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-sm-3">
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="id_do_projeto">
-								<div class="form-input">
-									<div class="form-group"><label>ID do projeto</label><span
-											class="required text-danger"><strong>*</strong></span><input type="text"
-											class="form-control" name="id_do_projeto" value=""
-											placeholder="Escreva o nome do projeto" data-size="big" required="required" readonly>
+		<div id="form_content">
+			<div class="panel panel-info" id="div_00">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Abertura
+					</h3>
+				</div>
+				<div id="abertura" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="id_do_projeto">
+									<div class="form-input">
+										<div class="form-group"><label>ID do projeto</label><span
+												class="required text-danger"><strong>*</strong></span><input type="text"
+												class="form-control" name="id_do_projeto" value=""
+												placeholder="Escreva o nome do projeto" data-size="big"
+												required="required" readonly>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-sm-5">
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="Nome_do_projeto">
-								<div class="form-input">
-									<label for="Nome_do_projeto" class="required">Nome do projeto</label>
-									<input type="zoom" class="form-control" name="Nome_do_projeto" id="Nome_do_projeto"
-										data-zoom="{
+							<div class="col-sm-5">
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="Nome_do_projeto">
+									<div class="form-input">
+										<label for="Nome_do_projeto" class="required">Nome do projeto</label>
+										<input type="zoom" class="form-control" name="Nome_do_projeto"
+											id="Nome_do_projeto" data-zoom="{
 											'displayKey':'name',
 											'datasetId':'scopi_consulta_projetos',
 											'maximumSelectionLength':'1',
@@ -71,258 +96,269 @@
 												}
 											]
 										 }" />
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-sm-2">
-							<div class="form-field" data-type="date" data-show-properties=""
-								data-field-name="data_inicio" style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Data de início do projeto aprovado</label><span
-											class="required text-danger"><strong>*</strong></span><input id="date3"
-											type="text" class="form-control" name="data_inicio" data-date=""
-											required="required" analytics="true" gooddataid="4" readonly></div>
+							<div class="col-sm-2">
+								<div class="form-field" data-type="date" data-show-properties=""
+									data-field-name="data_inicio" style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Data de início do projeto aprovado</label><span
+												class="required text-danger"><strong>*</strong></span><input id="date3"
+												type="text" class="form-control" name="data_inicio" data-date=""
+												required="required" analytics="true" gooddataid="4" readonly></div>
+									</div>
 								</div>
-							</div>
 
-						</div>
-						<div class="col-sm-2">
-							<div class="form-field" data-type="date" data-show-properties="" data-field-name="data_fim"
-								style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Data de fim do projeto aprovado</label><span
-											class="required text-danger"><strong>*</strong></span><input id="date4"
-											type="text" class="form-control" name="data_fim" data-date=""
-											required="required" analytics="true" gooddataid="5" readonly></div>
-								</div>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="form-field" data-type="textarea" data-show-properties=""
-								data-field-name="Descricao_proj" style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Descrição do projeto</label><span
-											class="required text-danger"><strong>*</strong></span><textarea
-											class="form-control" rows="3" name="Descricao_proj"
-											placeholder="Descreva o projeto" data-size="big" required="required"
-											analytics="true" gooddataid="10" readonly></textarea></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="id_area_responsave">
-								<div class="form-input">
-									<div class="form-group">
-										<input type="hidden" class="form-control" name="id_area_responsave" value=""
-											placeholder="Insira a área responsável por extenso " data-size="medium"
-											required="required" analytics="true" gooddataid="2">
-									</div>
-								</div>
-							</div>
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="area_responsave">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Área Responsável</label>
-										<span class="required text-danger">
-											<strong>*</strong>
-										</span>
-										<input type="text" class="form-control" name="area_responsave" value=""
-											placeholder="Insira a área responsável por extenso " data-size="medium"
-											required="required" analytics="true" gooddataid="2" readonly>
+							<div class="col-sm-2">
+								<div class="form-field" data-type="date" data-show-properties=""
+									data-field-name="data_fim" style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Data de fim do projeto aprovado</label><span
+												class="required text-danger"><strong>*</strong></span><input id="date4"
+												type="text" class="form-control" name="data_fim" data-date=""
+												required="required" analytics="true" gooddataid="5" readonly></div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6">
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="matricula_resp_pelo_proj"
-								style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group">
-										<input type="hidden" class="form-control" name="matricula_resp_pelo_proj"
-											value="71b454c9cd0b11ebaccaf6013dce9bda"
-											placeholder="Insira o nome do responsável pelo projeto" data-size="medium"
-											analytics="true" gooddataid="3">
-									</div>
-								</div>
-							</div>
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="resp_pelo_proj" style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Responsável pelo projeto</label>
-										<span class="required text-danger">
-											<strong>*</strong>
-										</span>
-										<input type="text" class="form-control" name="resp_pelo_proj" value
-											placeholder="Insira o nome do responsável pelo projeto" data-size="medium"
-											analytics="true" gooddataid="3" required="required" readonly>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-field" data-type="textarea" data-show-properties=""
+									data-field-name="Descricao_proj" style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Descrição do projeto</label><span
+												class="required text-danger"><strong>*</strong></span><textarea
+												class="form-control" rows="3" name="Descricao_proj"
+												placeholder="Descreva o projeto" data-size="big" required="required"
+												analytics="true" gooddataid="10" readonly></textarea></div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="id_OE">
-								<div class="form-input">
-									<div class="form-group">
-										<input type="hidden" class="form-control" name="id_OE" value=""
-											placeholder="Insira o Objetivo estratégico" data-size="big"
-											required="required">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="id_area_responsave">
+									<div class="form-input">
+										<div class="form-group">
+											<input type="hidden" class="form-control" name="id_area_responsave" value=""
+												placeholder="Insira a área responsável por extenso " data-size="medium"
+												required="required" analytics="true" gooddataid="2">
+										</div>
+									</div>
+								</div>
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="area_responsave">
+									<div class="form-input">
+										<div class="form-group">
+											<label>Área Responsável</label>
+											<span class="required text-danger">
+												<strong>*</strong>
+											</span>
+											<input type="text" class="form-control" name="area_responsave" value=""
+												placeholder="Insira a área responsável por extenso " data-size="medium"
+												required="required" analytics="true" gooddataid="2" readonly>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="OE">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Objetivo estratégico</label>
-										<span class="required text-danger">
-											<strong>*</strong>
-										</span>
-										<input type="text" class="form-control" name="OE" value=""
-											placeholder="Insira o Objetivo estratégico" data-size="big"
-											required="required" readonly>
+							<div class="col-sm-6">
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="matricula_resp_pelo_proj"
+									style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group">
+											<input type="hidden" class="form-control" name="matricula_resp_pelo_proj"
+												value="71b454c9cd0b11ebaccaf6013dce9bda"
+												placeholder="Insira o nome do responsável pelo projeto"
+												data-size="medium" analytics="true" gooddataid="3">
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="matricula_GOE">
-								<div class="form-input">
-									<div class="form-group">
-										<input type="hidden" class="form-control" name="matricula_GOE"
-											value
-											placeholder="Insira o Gestor do objetivo estratégico" data-size="big">
-									</div>
-								</div>
-							</div>
-							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="GOE">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Gestor do objetivo estratégico</label>
-										<span class="required text-danger">
-											<strong>*</strong>
-										</span>
-										<input type="text" class="form-control" name="GOE" value
-											placeholder="Insira o Gestor do objetivo estratégico" data-size="big"
-											required="required" readonly>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-10">
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="link_scopi" style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Endereço do projeto no SCOPI</label><span
-											class="required text-danger"><strong>*</strong></span><input type="text"
-											class="form-control" name="link_scopi" value=""
-											placeholder="Copie e cole aqui o link do endereço do projeto no SCOPI"
-											data-size="medium" required="required" analytics="true" gooddataid="10" readonly>
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="resp_pelo_proj" style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group">
+											<label>Responsável pelo projeto</label>
+											<span class="required text-danger">
+												<strong>*</strong>
+											</span>
+											<input type="text" class="form-control" name="resp_pelo_proj" value
+												placeholder="Insira o nome do responsável pelo projeto"
+												data-size="medium" analytics="true" gooddataid="3" required="required"
+												readonly>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-2">
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="AbrirScopi">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Link</label>
-										<br>
-										<a id="btAbrirScopi" target="_blank"><button type="button" class="btn btn-primary"
-												onclick="">Abrir no Scopi</button></a>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="id_OE">
+									<div class="form-input">
+										<div class="form-group">
+											<input type="hidden" class="form-control" name="id_OE" value=""
+												placeholder="Insira o Objetivo estratégico" data-size="big"
+												required="required">
+										</div>
+									</div>
+								</div>
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="OE">
+									<div class="form-input">
+										<div class="form-group">
+											<label>Objetivo estratégico</label>
+											<span class="required text-danger">
+												<strong>*</strong>
+											</span>
+											<input type="text" class="form-control" name="OE" value=""
+												placeholder="Insira o Objetivo estratégico" data-size="big"
+												required="required" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="matricula_GOE">
+									<div class="form-input">
+										<div class="form-group">
+											<input type="hidden" class="form-control" name="matricula_GOE" value
+												placeholder="Insira o Gestor do objetivo estratégico" data-size="big">
+										</div>
+									</div>
+								</div>
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="GOE">
+									<div class="form-input">
+										<div class="form-group">
+											<label>Gestor do objetivo estratégico</label>
+											<span class="required text-danger">
+												<strong>*</strong>
+											</span>
+											<input type="text" class="form-control" name="GOE" value
+												placeholder="Insira o Gestor do objetivo estratégico" data-size="big"
+												required="required" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-10">
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="link_scopi" style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Endereço do projeto no SCOPI</label><span
+												class="required text-danger"><strong>*</strong></span><input type="text"
+												class="form-control" name="link_scopi" value=""
+												placeholder="Copie e cole aqui o link do endereço do projeto no SCOPI"
+												data-size="medium" required="required" analytics="true" gooddataid="10"
+												readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="form-field" data-type="textbox" data-show-properties=""
+									data-field-name="AbrirScopi">
+									<div class="form-input">
+										<div class="form-group">
+											<label>Link</label>
+											<br>
+											<a id="btAbrirScopi" target="_blank"><button type="button"
+													class="btn btn-primary" onclick="">Abrir no Scopi</button></a>
 
+										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="form-field" data-type="textarea" data-show-properties=""
-								data-field-name="Ajustes_conside" style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Considerações dos ajuste solicitados</label><textarea
-											class="form-control" rows="3" name="Ajustes_conside"
-											placeholder="O solicitante deve inserir neste campo qualquer informação sobre os ajuste solicitados "
-											data-size="big" analytics="true" gooddataid="10"></textarea></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="panel panel-info" id="div_01">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					<span class="flaticon flaticon-message icon-sm"></span>
-					Retificação
-				</h3>
-			</div>
-			<div id="Valor_por_entid_div" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="form-field" data-type="tabledetail" data-show-properties=""
-								data-field-name="Retifica__o" style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group">
-										<table tablename="tabledetailname3" class="table" noaddbutton="true">
-											<thead>
-												<tr class="tableHeadRow">
-													<th class="tableColumn">Retificação<span class="required text-danger">
-														<strong>*</strong>
-													</span></th>
-													<th class="tableColumn">Alteração<span class="required text-danger">
-														<strong>*</strong>
-													</span></th>
-													<th class="tableColumn">Justificativa<span class="required text-danger">
-														<strong>*</strong>
-													</span></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr class="tableBodyRow">
-													<td class="fs-v-align-middle">
-														<div class="form-input">
-															<div class="form-field" data-type="combo" data-show-properties="" data-field-name="column1_3">
-																<div class="form-input">
-																	<div class="form-group">
-																		<select class="form-control" name="column1_3">
-																			<option value="Alteração na previsão de fim do projeto">Alteração na previsão de fim do projeto</option>
-																			<option value="Variação orçamentária maior que 25% da proposta inicial;">Variação orçamentária maior que 25% da proposta inicial</option>
-																			<option value="Alteração no escopo (inclusão ou cancelamento de ações);">Alteração no escopo (inclusão ou cancelamento de ações)</option>
-																			<option value="Alteração na(s) meta(s) estipulada(s) no(s) indicador(es) de desempenho">Alteração na(s) meta(s) estipulada(s) no(s) indicador(es) de desempenho</option>
-																		</select>
+			<div class="panel panel-info" id="div_01">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Retificação
+					</h3>
+				</div>
+				<div id="Valor_por_entid_div" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-field" data-type="tabledetail" data-show-properties=""
+									data-field-name="Retifica__o" style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group">
+											<table tablename="tabledetailname3" class="table" noaddbutton="true">
+												<thead>
+													<tr class="tableHeadRow">
+														<th class="tableColumn">Retificação<span
+																class="required text-danger">
+																<strong>*</strong>
+															</span></th>
+														<th class="tableColumn">Alteração<span
+																class="required text-danger">
+																<strong>*</strong>
+															</span></th>
+														<th class="tableColumn">Justificativa<span
+																class="required text-danger">
+																<strong>*</strong>
+															</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="tableBodyRow">
+														<td class="fs-v-align-middle">
+															<div class="form-input">
+																<div class="form-field" data-type="combo"
+																	data-show-properties="" data-field-name="column1_3">
+																	<div class="form-input">
+																		<div class="form-group">
+																			<select class="form-control"
+																				name="column1_3">
+																				<option
+																					value="Alteração na previsão de fim do projeto">
+																					Alteração na previsão de fim do
+																					projeto</option>
+																				<option
+																					value="Variação orçamentária maior que 25% da proposta inicial;">
+																					Variação orçamentária maior que 25%
+																					da proposta inicial</option>
+																				<option
+																					value="Alteração no escopo (inclusão ou cancelamento de ações);">
+																					Alteração no escopo (inclusão ou
+																					cancelamento de ações)</option>
+																				<option
+																					value="Alteração na(s) meta(s) estipulada(s) no(s) indicador(es) de desempenho">
+																					Alteração na(s) meta(s)
+																					estipulada(s) no(s) indicador(es) de
+																					desempenho</option>
+																			</select>
+																		</div>
 																	</div>
 																</div>
 															</div>
-															</div>
-													</td>
-													<td class="fs-v-align-middle">
-														<div class="form-input"><input type="text" name="column2_3"
-																class="form-control" label="Alteração"></div>
-													</td>
-													<td class="fs-v-align-middle">
-														<div class="form-input"><input type="text" name="column3_3"
-																class="form-control" label="Justificativa"></div>
-													</td>
-												</tr>
-											</tbody>
-										</table><button type="button" class="btn btn-primary"
-											onclick="wdkAddChild('tabledetailname3')" name="btnRetificacao">Incluir retificação</button>
+														</td>
+														<td class="fs-v-align-middle">
+															<div class="form-input"><input type="text" name="column2_3"
+																	class="form-control" label="Alteração"></div>
+														</td>
+														<td class="fs-v-align-middle">
+															<div class="form-input"><input type="text" name="column3_3"
+																	class="form-control" label="Justificativa"></div>
+														</td>
+													</tr>
+												</tbody>
+											</table><button type="button" class="btn btn-primary"
+												onclick="wdkAddChild('tabledetailname3')" name="btnRetificacao">Incluir
+												retificação</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -330,224 +366,257 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="panel panel-info" id="div_02">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					<span class="flaticon flaticon-message icon-sm"></span>
-					Aprovação Responsável Projeto
-				</h3>
-			</div>
-			<div id="aprov_R_P_div" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="form-field" data-type="radio" data-show-properties=""
-								data-field-name="aprov_R_P" analytics="true" gooddataid="7">
-								<div class="form-input">
-									<div class="form-group"><label>Aprovado pelo Responsável pelo projeto?</label>
-										<div class="radio-options">
-											<div class="radio"><label><input type="radio" name="aprov_R_P"
-														value="Sim e sou responsável pelo Objetivo Estratégico">Sim e
-													sou responsável pelo
-													Objetivo Estratégico</label></div>
-											<div class="radio"><label><input type="radio" name="aprov_R_P"
-														value="Sim e não sou responsável pelo Objetivo Estratégico">Sim
-													e não sou
-													responsável pelo Objetivo Estratégico</label></div>
-											<div class="radio"><label><input type="radio" name="aprov_R_P"
-														value="Necessário ajustar">Necessário ajustar</label></div>
+			<div class="panel panel-info" id="div_02">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Aprovação Responsável Projeto
+					</h3>
+				</div>
+				<div id="aprov_R_P_div" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-field" data-type="radio" data-show-properties=""
+									data-field-name="aprov_R_P" analytics="true" gooddataid="7">
+									<div class="form-input">
+										<div class="form-group"><label>Aprovado pelo Responsável pelo projeto?</label>
+											<div class="radio-options">
+												<div class="radio"><label><input type="radio" name="aprov_R_P"
+															value="Sim e sou responsável pelo Objetivo Estratégico">Sim
+														e
+														sou responsável pelo
+														Objetivo Estratégico</label></div>
+												<div class="radio"><label><input type="radio" name="aprov_R_P"
+															value="Sim e não sou responsável pelo Objetivo Estratégico">Sim
+														e não sou
+														responsável pelo Objetivo Estratégico</label></div>
+												<div class="radio"><label><input type="radio" name="aprov_R_P"
+															value="Necessário ajustar">Necessário ajustar</label></div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="form-field" data-type="textarea" data-show-properties=""
-								data-field-name="ajustes_R_P" style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Ajustes necessários sugeridos pelo Responsável pelo
-											projeto</label><textarea class="form-control" rows="3" name="ajustes_R_P"
-											placeholder="Insira os ajustes necessários após leitura das informações deste formulário"
-											data-size="big" analytics="true" gooddataid="9"></textarea></div>
+							<div class="col-sm-6">
+								<div class="form-field" data-type="textarea" data-show-properties=""
+									data-field-name="ajustes_R_P" style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Ajustes necessários sugeridos pelo Responsável
+												pelo
+												projeto</label><textarea class="form-control" rows="3"
+												name="ajustes_R_P"
+												placeholder="Insira os ajustes necessários após leitura das informações deste formulário"
+												data-size="big" analytics="true" gooddataid="9"></textarea></div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="panel panel-info" id="div_03">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					<span class="flaticon flaticon-message icon-sm"></span>
-					Aprovação Responsável Objetivo Estratégico
-				</h3>
-			</div>
-			<div id="Aprov_Resp_O_E_div" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="form-field" data-type="radio" data-show-properties=""
-								data-field-name="Aprov_Resp_O_E" analytics="true" gooddataid="10"
-								style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Aprovado pelo Responsável pelo Objetivo
-											Estratégico?</label>
-										<div class="radio-options">
-											<div class="radio"><label><input type="radio" name="Aprov_Resp_O_E"
-														value="Sim">Sim</label>
+			<div class="panel panel-info" id="div_03">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Aprovação Responsável Objetivo Estratégico
+					</h3>
+				</div>
+				<div id="Aprov_Resp_O_E_div" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-field" data-type="radio" data-show-properties=""
+									data-field-name="Aprov_Resp_O_E" analytics="true" gooddataid="10"
+									style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Aprovado pelo Responsável pelo Objetivo
+												Estratégico?</label>
+											<div class="radio-options">
+												<div class="radio"><label><input type="radio" name="Aprov_Resp_O_E"
+															value="Sim">Sim</label>
+												</div>
+												<div class="radio"><label><input type="radio" name="Aprov_Resp_O_E"
+															value="Necessário ajustar">Necessário ajustar</label></div>
 											</div>
-											<div class="radio"><label><input type="radio" name="Aprov_Resp_O_E"
-														value="Necessário ajustar">Necessário ajustar</label></div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="form-field" data-type="textarea" data-show-properties=""
-								data-field-name="ajustes_R_O_E" style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Ajustes necessários sugeridos pelo Responsável pelo
-											Objetivo
-											Estratégico</label><textarea class="form-control" rows="3"
-											name="ajustes_R_O_E"
-											placeholder="Insira os ajustes necessários após leitura das informações deste formulário"
-											data-size="big" analytics="true" gooddataid="10"></textarea></div>
+							<div class="col-sm-6">
+								<div class="form-field" data-type="textarea" data-show-properties=""
+									data-field-name="ajustes_R_O_E" style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Ajustes necessários sugeridos pelo Responsável
+												pelo
+												Objetivo
+												Estratégico</label><textarea class="form-control" rows="3"
+												name="ajustes_R_O_E"
+												placeholder="Insira os ajustes necessários após leitura das informações deste formulário"
+												data-size="big" analytics="true" gooddataid="10"></textarea></div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="panel panel-info" id="div_04">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					<span class="flaticon flaticon-message icon-sm"></span>
-					Aprovação Planejamento Estratégico
-				</h3>
-			</div>
-			<div id="valid_P_E_div" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="form-field" data-type="radio" data-show-properties=""
-								data-field-name="valid_P_E" analytics="true" gooddataid="6">
-								<div class="form-input">
-									<div class="form-group"><label>Validado pelo Planejamento Estratégico?</label>
-										<div class="radio-options">
-											<div class="radio"><label><input type="radio" name="valid_P_E"
-														value="Sim">Sim</label></div>
-											<div class="radio"><label><input type="radio" name="valid_P_E"
-														value="Necessário ajustar">Necessário ajustar</label></div>
+			<div class="panel panel-info" id="div_04">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Validação do Núcleo do Planejamento Estratégico
+					</h3>
+				</div>
+				<div id="valid_P_E_div" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-field" data-type="radio" data-show-properties=""
+									data-field-name="valid_P_E" analytics="true" gooddataid="6">
+									<div class="form-input">
+										<div class="form-group"><label>Validado pelo Planejamento Estratégico?</label>
+											<div class="radio-options">
+												<div class="radio"><label><input type="radio" name="valid_P_E"
+															value="Sim">Sim</label></div>
+												<div class="radio"><label><input type="radio" name="valid_P_E"
+															value="Necessário ajustar">Necessário ajustar</label></div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="form-field" data-type="textarea" data-show-properties=""
-								data-field-name="ajustes_P_E" style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Ajustes necessários sugeridos pelo Planejamento
-											Estratégico</label><textarea class="form-control" rows="3"
-											name="ajustes_P_E"
-											placeholder="Insira os ajustes necessários após leitura das informações deste formulário"
-											data-size="big" analytics="true" gooddataid="10"></textarea></div>
+							<div class="col-sm-6">
+								<div class="form-field" data-type="textarea" data-show-properties=""
+									data-field-name="ajustes_P_E" style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Ajustes necessários sugeridos pelo Planejamento
+												Estratégico</label><textarea class="form-control" rows="3"
+												name="ajustes_P_E"
+												placeholder="Insira os ajustes necessários após leitura das informações deste formulário"
+												data-size="big" analytics="true" gooddataid="10"></textarea></div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="panel panel-info" id="div_05">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					<span class="flaticon flaticon-message icon-sm"></span>
-					Aprovação Diretor Adjunto
-				</h3>
-			</div>
-			<div id="Aprov_D_adjunto_div" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="form-field" data-type="radio" data-show-properties=""
-								data-field-name="Aprov_D_adjunto" analytics="true" gooddataid="8"
-								style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Aprovado pelo Diretor Adjunto?</label>
-										<div class="radio-options">
-											<div class="radio"><label><input type="radio" name="Aprov_D_adjunto"
-														value="Sim">Sim</label>
-											</div>
-											<div class="radio"><label><input type="radio" name="Aprov_D_adjunto"
-														value="Necessário ajustar">Necessário ajustar</label></div>
-											<div class="radio"><label><input type="radio" name="Aprov_D_adjunto"
-														value="Não">Não</label>
+			<div class="panel panel-info" id="div_05">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Aprovação Diretor Adjunto
+					</h3>
+				</div>
+				<div id="Aprov_D_adjunto_div" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-field" data-type="radio" data-show-properties=""
+									data-field-name="Aprov_D_adjunto" analytics="true" gooddataid="8"
+									style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Aprovado pelo Diretor Adjunto?</label>
+											<div class="radio-options">
+												<div class="radio"><label><input type="radio" name="Aprov_D_adjunto"
+															value="Sim">Sim</label>
+												</div>
+												<div class="radio"><label><input type="radio" name="Aprov_D_adjunto"
+															value="Necessário ajustar">Necessário ajustar</label></div>
+												<div class="radio"><label><input type="radio" name="Aprov_D_adjunto"
+															value="Não">Não</label>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="form-field" data-type="textarea" data-show-properties=""
-								data-field-name="Ajustes_D_Adjun">
-								<div class="form-input">
-									<div class="form-group"><label>Ajustes necessários sugeridos pelo Diretor
-											Adjunto</label><textarea class="form-control" rows="3"
-											name="Ajustes_D_Adjun"
-											placeholder="Insira os ajustes necessários após leitura das informações deste formulário"
-											data-size="big" analytics="true" gooddataid="10"></textarea></div>
+							<div class="col-sm-6">
+								<div class="form-field" data-type="textarea" data-show-properties=""
+									data-field-name="Ajustes_D_Adjun">
+									<div class="form-input">
+										<div class="form-group"><label>Ajustes necessários sugeridos pelo Diretor
+												Adjunto</label><textarea class="form-control" rows="3"
+												name="Ajustes_D_Adjun"
+												placeholder="Insira os ajustes necessários após leitura das informações deste formulário"
+												data-size="big" analytics="true" gooddataid="10"></textarea></div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="panel panel-info" id="div_06">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					<span class="flaticon flaticon-message icon-sm"></span>
-					Aprovação Diretoria Executiva
-				</h3>
-			</div>
-			<div id="Aprov_D_Executi_div" class="panel-collapse collapse in">
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="form-field" data-type="radio" data-show-properties=""
-								data-field-name="Aprov_D_Executi" analytics="true" gooddataid="10"
-								style="position: relative; left: 0px; top: 0px;">
-								<div class="form-input">
-									<div class="form-group"><label>Aprovado pela Diretora Executiva?</label>
-										<div class="radio-options">
-											<div class="radio"><label><input type="radio" name="Aprov_D_Executi"
-														value="Sim">Sim</label>
-											</div>
-											<div class="radio"><label><input type="radio" name="Aprov_D_Executi"
-														value="Necessário ajustar">Necessário ajustar</label></div>
-											<div class="radio"><label><input type="radio" name="Aprov_D_Executi"
-														value="Não">Não</label>
+			<div class="panel panel-info" id="div_06">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Aprovação Diretoria Executiva
+					</h3>
+				</div>
+				<div id="Aprov_D_Executi_div" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-field" data-type="radio" data-show-properties=""
+									data-field-name="Aprov_D_Executi" analytics="true" gooddataid="10"
+									style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Aprovado pela Diretora Executiva?</label>
+											<div class="radio-options">
+												<div class="radio"><label><input type="radio" name="Aprov_D_Executi"
+															value="Sim">Sim</label>
+												</div>
+												<div class="radio"><label><input type="radio" name="Aprov_D_Executi"
+															value="Necessário ajustar">Necessário ajustar</label></div>
+												<div class="radio"><label><input type="radio" name="Aprov_D_Executi"
+															value="Não">Não</label>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+							<div class="col-sm-6">
+								<div class="form-field" data-type="textarea" data-show-properties=""
+									data-field-name="Ajustes_D_Execu">
+									<div class="form-input">
+										<div class="form-group"><label>Ajustes necessários sugeridos pela Diretora
+												Executiva</label><textarea class="form-control" rows="3"
+												name="Ajustes_D_Execu"
+												placeholder="Insira os ajustes necessários após leitura das informações deste formulário"
+												data-size="big" analytics="true" gooddataid="10"></textarea></div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-sm-6">
-							<div class="form-field" data-type="textarea" data-show-properties=""
-								data-field-name="Ajustes_D_Execu">
-								<div class="form-input">
-									<div class="form-group"><label>Ajustes necessários sugeridos pela Diretora
-											Executiva</label><textarea class="form-control" rows="3"
-											name="Ajustes_D_Execu"
-											placeholder="Insira os ajustes necessários após leitura das informações deste formulário"
-											data-size="big" analytics="true" gooddataid="10"></textarea></div>
+						<div class="form-group row" id="div_gerar_pdf">
+							<button type="button" class="btn btn-primary" onclick="verificaPDF()">Gerar PDF</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-info" id="div_07">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Considerações sobre os ajustes solicitados
+					</h3>
+				</div>
+				<div id="Ajustes_conside_div" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-field" data-type="textarea" data-show-properties=""
+									data-field-name="Ajustes_conside" style="position: relative; left: 0px; top: 0px;">
+									<div class="form-input">
+										<div class="form-group"><label>Considerações dos ajuste
+												solicitados</label><textarea class="form-control" rows="3"
+												name="Ajustes_conside"
+												placeholder="O solicitante deve inserir neste campo qualquer informação sobre os ajuste solicitados "
+												data-size="big" analytics="true" gooddataid="10"></textarea></div>
+									</div>
 								</div>
 							</div>
 						</div>

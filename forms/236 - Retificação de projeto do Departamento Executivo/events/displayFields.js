@@ -1,6 +1,11 @@
 function displayFields(form, customHTML) {
     var activity = getValue('WKNumState');
-    customHTML.append("<script> var ATIVIDADE = "+getValue("WKNumState")+";</script>"); 
+    customHTML.append("<script type='text/javascript'>");
+    customHTML.append("let MODE = '" + form.getFormMode() + "';");
+    customHTML.append("let ATIVIDADE = " + getValue("WKNumState") + ";");
+	customHTML.append("let NUM_PROCESS = '" + form.getFormMode() + "';");
+    customHTML.append("</script>");
+
     
     if  (activity != 5 && activity != 10 && activity != 0 && activity != 52 && activity != 54 && activity != 50) {
         customHTML.append('<script>');

@@ -30,4 +30,13 @@ function validateForm(form) {
     if ((form.getValue("column3_3___1") == null || form.getValue("column3_3___1") == "") && (getValue('WKNumProces') == null || (getValue('WKNumProces') > 0 && getValue('WKCompletTask') == 'true'))) {
         throw "Justificativa em retificação n\u00E3o pode ser vazio.";
     }
+    if ((form.getValue("doc_id") == null || 
+    		form.getValue("doc_id") == "" || 
+    		form.getValue("nr_pasta") == "" || 
+    		form.getValue("nr_pasta") == null) && 
+    		(getValue('WKNumProces') == null || (getValue('WKNumProces') > 0 && getValue('WKCompletTask') == 'true')) &&
+    		activity == 27 && form.getValue("Aprov_D_Executi")=="Sim"
+    ) {
+        throw "Necessário Gerar o Formulário através do botão 'Gerar PDF' em Aprovação Diretoria Executiva!";
+    }
 }
