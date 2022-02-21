@@ -5,7 +5,9 @@ function beforeTaskSave(colleagueId,nextSequenceId,userList){
     var atividade = getValue("WKNumState")
 
     if (atividade==27){
-        hAPI.attachDocument(hAPI.getCardValue("doc_id"));
+    	if (hAPI.getCardValue("Aprov_D_Executi")=="Sim"){
+    		hAPI.attachDocument(hAPI.getCardValue("doc_id"));
+    	}
     }
     log.info("#### >> RETIFICAÇÃO DE PROCESSOS BEFORESAVE - FIM")
 }

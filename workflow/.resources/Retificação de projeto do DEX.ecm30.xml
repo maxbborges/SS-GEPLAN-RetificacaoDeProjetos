@@ -29,7 +29,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Retificação de projeto do Departamento Executivo</processId>
-      <version>19</version>
+      <version>20</version>
     </processDefinitionVersionPK>
     <versionDescription>Nova Versão.</versionDescription>
     <formId>4113</formId>
@@ -1177,7 +1177,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>17</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1190,7 +1190,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>17</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1204,7 +1204,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>21</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1217,7 +1217,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>21</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1231,7 +1231,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>3</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>21</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1243,7 +1243,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>29</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1255,7 +1255,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>29</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1269,7 +1269,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>3</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>29</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1281,7 +1281,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>39</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1294,7 +1294,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>39</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1307,7 +1307,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>3</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>39</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1321,7 +1321,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>43</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1334,7 +1334,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>19</version>
+        <version>20</version>
         <sequence>43</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1923,7 +1923,9 @@
     var atividade = getValue(&quot;WKNumState&quot;)&#xd;
 &#xd;
     if (atividade==27){&#xd;
-        hAPI.attachDocument(hAPI.getCardValue(&quot;doc_id&quot;));&#xd;
+    	if (hAPI.getCardValue(&quot;Aprov_D_Executi&quot;)==&quot;Sim&quot;){&#xd;
+    		hAPI.attachDocument(hAPI.getCardValue(&quot;doc_id&quot;));&#xd;
+    	}&#xd;
     }&#xd;
     log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS BEFORESAVE - FIM&quot;)&#xd;
 }</eventDescription>
@@ -2402,7 +2404,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>7</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2413,7 +2415,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>20</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2424,7 +2426,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>20</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2435,7 +2437,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>25</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2446,7 +2448,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>25</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2457,7 +2459,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>25</linkSequence>
         <bendSequence>3</bendSequence>
       </processLinkBendPK>
@@ -2468,7 +2470,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>26</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2479,7 +2481,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>26</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2490,7 +2492,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>31</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2501,7 +2503,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>40</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2512,7 +2514,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>42</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2523,7 +2525,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>45</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2534,7 +2536,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>46</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2545,7 +2547,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>46</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2556,7 +2558,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>47</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2567,7 +2569,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>48</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2578,7 +2580,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>48</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2589,7 +2591,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>49</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2600,7 +2602,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>77</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2611,7 +2613,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <linkSequence>77</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2624,7 +2626,7 @@ function jsonStringify(obj) {
       <processStateTriggerPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>19</version>
+        <version>20</version>
         <stateSequence>59</stateSequence>
         <triggerSequence>0</triggerSequence>
       </processStateTriggerPK>

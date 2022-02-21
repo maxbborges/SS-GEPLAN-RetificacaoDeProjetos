@@ -2,9 +2,19 @@ loading = {}
 $(document).ready(function () {
     init();
     loading = FLUIGC.loading(window);
+    $("#div_gerar_pdf").hide()
+
     setTimeout(() => {
         $('.wcm-panel-content.wcm-panel-left #ecm-documentview-main #ecm-documentview-toolbar').css("display","none")
     }, 500);
+
+    $("[name='Aprov_D_Executi']").change(function(){
+        if ($(this).val()=='Sim'){
+            $("#div_gerar_pdf").show()
+        } else {
+            $("#div_gerar_pdf").hide()
+        }
+    })
     
 });
 
@@ -64,9 +74,11 @@ function init() {
 
      }
      if(ATIVIDADE==10){
-         setTimeout(()=>{
-             $('tbody tr i')[1].remove()
-         },500)
+         if(MODE!='VIEW'){
+            setTimeout(()=>{
+                $('tbody tr i')[1].remove()
+            },500)
+         }
      }
 }
 
