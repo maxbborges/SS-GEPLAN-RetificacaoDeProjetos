@@ -13,3 +13,12 @@
 .panel.panel-info{
     border-color: #002060;
 }
+
+.btn_retificacao_01{
+    margin-top: 25px;
+}
+
+.colunaDe_01,.colunaRetificacao_01 {
+    max-width: 300px;
+}
+

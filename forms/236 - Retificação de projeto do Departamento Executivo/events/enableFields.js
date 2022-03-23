@@ -88,6 +88,7 @@ function enableFields(form) {
         form.setEnabled('Descricao_proj', false);
     }
     if (activity == 15) {
+        form.setEnabled('ajustes_R_O_E', false);
         form.setEnabled('Ajustes_D_Adjun', false);
         form.setEnabled('Aprov_D_adjunto', false);
         form.setEnabled('ajustes_R_P', false);

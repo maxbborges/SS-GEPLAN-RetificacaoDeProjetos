@@ -1,38 +1,74 @@
 loading = {}
+$(window).on('load', function() {
+    console.log(ATIVIDADE)
+    if(ATIVIDADE==5||ATIVIDADE==0||ATIVIDADE==10){
+        indicadores = carregaIndicadores()
+
+        for (i=0;i<(indicadores.values).length-1;i++){
+            $('[name="indicador_01"]').append(
+                $('<option>', { 
+                    value: indicadores.values[i].name,
+                    text :indicadores.values[i].name 
+                })
+            );
+    }
+    }
+    
+});
+
 $(document).ready(function () {
     init();
     loading = FLUIGC.loading(window);
     $("#div_gerar_pdf").hide()
 
-    setTimeout(() => {
-        $('.wcm-panel-content.wcm-panel-left #ecm-documentview-main #ecm-documentview-toolbar').css("display","none")
-    }, 500);
-
+    // setTimeout(() => {
+    //     $('.wcm-panel-content.wcm-panel-left #ecm-documentview-main #ecm-documentview-toolbar').css("display","none")
+    // }, 500);
+    
     $("[name='Aprov_D_Executi']").change(function(){
         if ($(this).val()=='Sim'){
             $("#div_gerar_pdf").show()
         } else {
             $("#div_gerar_pdf").hide()
         }
-    })
-    
+    });
 });
 
 function init() {
-    console.log(MODE)
     if (ATIVIDADE!=5&&ATIVIDADE!=0&&ATIVIDADE!=10){
         setTimeout(()=>{
-            linhasColunas=$('[data-field-name="Retifica__o"] tbody tr input')
+            linhasColunas=$('[tablename="tabledetailname3"] tbody tr textarea')
             for(i=2;i<linhasColunas.length;i++){
                 $(linhasColunas[i]).prop("readonly",true);
             }
-            $('[data-field-name="Retifica__o"] tbody tr select option:not(:selected)').remove()
+            $('[tablename="tabledetailname3"] tbody tr select').remove()
+            
+            var inputs = $('[tablename="tabledetailname3"] tbody tr input')
+            for (i=0;i<inputs.length;i++){
+                if ($(inputs[i]).val()==''||$(inputs[i]).val()=='\xa0'){
+                    $(inputs[i]).hide()
+                }
+            }
+
+            var inputs = $('[tablename="tabledetailname3"] tbody tr span')
+            for (i=10;i<=inputs.length;i++){
+                texto = $(inputs[i]).text()
+                console.log(texto)
+                if (texto==''||texto=='\xa0'||texto=='Alteração no escopo (inclusão);'||
+                        texto=='Selecione um indicador'||texto=='Selecione uma ação'||
+                        texto=='Alteração na previsão de fim do projeto;'||
+                        texto=='Alteração na(s) meta(s) estipulada(s) no(s) indicador(es) de desempenho;'||
+                        texto=='Variação orçamentária maior que 25% da proposta inicial;'||
+                        texto=='Alteração no escopo (cancelamento de ações);'){
+                    $(inputs[i]).remove()
+                }
+            }
+
             if (MODE!='VIEW'){
             	$('tr:first-child>th:first-child').remove()
             }
             $(".bpm-mobile-trash-column").remove()
-            $('[data-field-name="Retifica__o"] .btn').hide()
-            
+            $('[tablename="tabledetailname3"] .btn').hide()
         },500)
     }
 
@@ -44,7 +80,7 @@ function init() {
         setTimeout(()=>{
             $('tbody tr i')[1].remove()
         },500)
-        wdkAddChild('tabledetailname3');
+        // wdkAddChild('tabledetailname3');
          $('#div_02').hide()
          $('#div_03').hide()
          $('#div_04').hide()
@@ -53,10 +89,13 @@ function init() {
          $('#div_07').hide()
     }
      if(ATIVIDADE==6){
-         $('#div_03').hide()
-         $('#div_04').hide()
-         $('#div_05').hide()
-         $('#div_06').hide()
+        if (MODE=='VIEW'){
+            $('#div_02').hide()
+        }
+        $('#div_03').hide()
+        $('#div_04').hide()
+        $('#div_05').hide()
+        $('#div_06').hide()
      }
      if(ATIVIDADE==41){
          $('#div_04').hide()
@@ -64,20 +103,38 @@ function init() {
          $('#div_06').hide()
      }
      if(ATIVIDADE==15){
-         $('#div_05').hide()
-         $('#div_06').hide()
+        if (MODE=='VIEW'){
+            $('#div_04').hide()
+        }
+        $('#div_05').hide()
+        $('#div_06').hide()
      }
      if(ATIVIDADE==19){
+        if (MODE=='VIEW'){
+            $('#div_05').hide()
+        }
          $('#div_06').hide()
      }
      if(ATIVIDADE==27){
-
+        if (MODE=='VIEW'){
+            $('#div_06').hide()
+        }
      }
      if(ATIVIDADE==10){
          if(MODE!='VIEW'){
             setTimeout(()=>{
                 $('tbody tr i')[1].remove()
             },500)
+         }
+
+         var inputs = $('[tablename="tabledetailname3"] tbody tr')
+         for (i=1;i<inputs.length;i++){
+            $('[name="slc_retificacao_01___'+i+'"').val('')
+            $('[name="slc_retificacao_01___'+i+'"').hide()
+            $('[name="column2_3___'+i+'"').hide()
+            $('[name="column3_3___'+i+'"').hide()
+            $('[name="acao_01___'+i+'"').prop('disabled',true)
+            $('[name="indicador_01___'+i+'"').prop('disabled',true)
          }
      }
 }
@@ -88,7 +145,6 @@ function carregarLink(){
         ? "" : "https://system.scopi.com.br/#/projects/"+projectId+"/actions";
     $("[name='link_scopi']").val(link);
 	$("#btAbrirScopi").prop('href', link);
-    // $('#link_scopi').trigger('change');
 }
 
 function carregarUsuarioFluig(scopiUserId){
@@ -136,6 +192,17 @@ function carregarObjetivoEstrategico(objective_id){
     
 }
 
+function carregaDadosRetificacao(projectId){
+	let constraints = [ DatasetFactory.createConstraint("idProjeto", projectId, projectId, ConstraintType.MUST) ];
+	let dataset = DatasetFactory.getDataset("scopi_consulta_projetos", null, constraints, null)
+    return dataset
+}
+
+function carregaIndicadores(){
+    let dataset = DatasetFactory.getDataset("scopi_consulta_indicadores", null, null, null)
+    return dataset
+}
+
 function setSelectedZoomItem(selectedItem) {
     if (selectedItem.inputId == "Nome_do_projeto") {
         $("[name='id_do_projeto']").val(selectedItem.ID);
@@ -152,6 +219,7 @@ function setSelectedZoomItem(selectedItem) {
 
         carregarUsuarioFluig(selectedItem.coordinator_id)
         carregarObjetivoEstrategico(selectedItem.objective_id)
+        // carregaDadosRetificacao(selectedItem.ID)
         carregarLink()
     }
 
@@ -233,4 +301,72 @@ function verificaPDF() {
     $("#div_05").show();
     $("#div_06").show();
     $("#div_07").show();
+}
+
+function addLineTable(){
+    idProjeto=$('[name="id_do_projeto"]').val()
+    // var idProjeto='4662'
+    if (idProjeto==''){
+        FLUIGC.toast({
+            message: 'Selecione um projeto!',
+            type: 'danger'
+        });
+
+        throw "Erro, selecione uma Indicador!"
+    }
+    setTimeout(()=>{
+        wdkAddChild('tabledetailname3')
+
+        dados = carregaDadosRetificacao(idProjeto)
+        fases = (dados.values[0].phases).split(";")
+        $('#column1_3___'+newId).hide()
+        $('#column2_3___'+newId).hide()
+        $('#column3_3___'+newId).hide()
+
+        for (i=0;i<fases.length-1;i++){
+            $('#acao_01___'+newId).append($('<option>', { 
+                value: fases[i],
+                text :fases[i] 
+            }));
+        }
+
+        $('#indicador_01___'+newId).prop('disabled',true)
+        $('#acao_01___'+newId).prop('disabled',true)
+
+        $("#slc_retificacao_01___"+newId).change(function(){
+            $("#column1_3___"+newId).val($(this).val())
+            
+            if ($(this).val()=="Alteração na previsão de fim do projeto;"){
+                $('#column4_3___'+newId).val("")
+                dataBr = (dados.values[0].prevision_end).split("-")
+                dataBr = dataBr[2]+"/"+dataBr[1]+"/"+dataBr[0]
+                $('#column5_3___'+newId).val("Data Final Atual: "+dataBr)
+            } else if ($(this).val()=="Variação orçamentária maior que 25% da proposta inicial;"){
+                $('#column5_3___'+newId).val("")
+                $('#column4_3___'+newId).val("Valor Atual: "+dados.values[0].expenses)
+            } else {
+                $('#column5_3___'+newId).val("")
+                $('#column4_3___'+newId).val("")
+
+                if ($(this).val()=='Alteração no escopo (cancelamento de ações);'){
+                    $('#acao_01___'+newId).prop('disabled',false)
+                    $('#indicador_01___'+newId).prop('disabled',true)
+                } else if ($(this).val()=="Alteração na(s) meta(s) estipulada(s) no(s) indicador(es) de desempenho;"){
+                    $('#indicador_01___'+newId).prop('disabled',false)
+                    $('#acao_01___'+newId).prop('disabled',true)
+                } else {
+                    $('#indicador_01___'+newId).prop('disabled',true)
+                    $('#acao_01___'+newId).prop('disabled',true)
+                }
+            }
+        });
+
+        $('#indicador_01___'+newId).on("change",function(){
+            $('#column2_3___'+newId).val($(this).val())
+        })
+
+        $('#acao_01___'+newId).on("change",function(){
+            $('#column3_3___'+newId).val($(this).val())
+        })
+    },100)
 }

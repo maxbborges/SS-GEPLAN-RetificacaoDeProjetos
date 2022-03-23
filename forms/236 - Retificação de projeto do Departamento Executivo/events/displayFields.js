@@ -15,29 +15,12 @@ function displayFields(form, customHTML) {
     
     if (activity == 19) {
         customHTML.append('<script>');
-        customHTML.append('$(\'*[name="aprov_R_P"]\').css(\'display\', \'none\');var closers = $(\'*[name="aprov_R_P"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="aprov_R_P"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="aprov_R_P"]\').closest("li").hide()');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="valid_P_E"]\').css(\'display\', \'none\');var closers = $(\'*[name="valid_P_E"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="valid_P_E"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="valid_P_E"]\').closest("li").hide()');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
         customHTML.append('$(\'*[name="Aprov_D_Executi"]\').css(\'display\', \'none\');var closers = $(\'*[name="Aprov_D_Executi"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="Aprov_D_Executi"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
         customHTML.append('</script>');
         customHTML.append('<script>');
         customHTML.append('$(\'*[name="Aprov_D_Executi"]\').closest("li").hide()');
         customHTML.append('</script>');
         customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_Resp_O_E"]\').css(\'display\', \'none\');var closers = $(\'*[name="Aprov_Resp_O_E"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="Aprov_Resp_O_E"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_Resp_O_E"]\').closest("li").hide()');
-        customHTML.append('</script>');
     }
     if (activity == 5 || activity == 0) {
         customHTML.append('<script>');
@@ -147,64 +130,6 @@ function displayFields(form, customHTML) {
         customHTML.append('$(\'*[name="Aprov_D_Executi"]\').closest("li").hide()');
         customHTML.append('</script>');
     }
-    if (activity == 10) {
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="aprov_R_P"]\').css(\'display\', \'none\');var closers = $(\'*[name="aprov_R_P"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="aprov_R_P"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="aprov_R_P"]\').closest("li").hide()');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="valid_P_E"]\').css(\'display\', \'none\');var closers = $(\'*[name="valid_P_E"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="valid_P_E"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="valid_P_E"]\').closest("li").hide()');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_D_adjunto"]\').css(\'display\', \'none\');var closers = $(\'*[name="Aprov_D_adjunto"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="Aprov_D_adjunto"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_D_adjunto"]\').closest("li").hide()');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_D_Executi"]\').css(\'display\', \'none\');var closers = $(\'*[name="Aprov_D_Executi"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="Aprov_D_Executi"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_D_Executi"]\').closest("li").hide()');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_Resp_O_E"]\').css(\'display\', \'none\');var closers = $(\'*[name="Aprov_Resp_O_E"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="Aprov_Resp_O_E"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_Resp_O_E"]\').closest("li").hide()');
-        customHTML.append('</script>');
-    }
-    if (activity == 27) {
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_D_adjunto"]\').css(\'display\', \'none\');var closers = $(\'*[name="Aprov_D_adjunto"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="Aprov_D_adjunto"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_D_adjunto"]\').closest("li").hide()');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="valid_P_E"]\').css(\'display\', \'none\');var closers = $(\'*[name="valid_P_E"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="valid_P_E"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="valid_P_E"]\').closest("li").hide()');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="aprov_R_P"]\').css(\'display\', \'none\');var closers = $(\'*[name="aprov_R_P"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="aprov_R_P"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="aprov_R_P"]\').closest("li").hide()');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_Resp_O_E"]\').css(\'display\', \'none\');var closers = $(\'*[name="Aprov_Resp_O_E"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="Aprov_Resp_O_E"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="Aprov_Resp_O_E"]\').closest("li").hide()');
-        customHTML.append('</script>');
-    }
     if (activity == 15) {
         customHTML.append('<script>');
         customHTML.append('$(\'*[name="Aprov_D_adjunto"]\').css(\'display\', \'none\');var closers = $(\'*[name="Aprov_D_adjunto"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="Aprov_D_adjunto"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
@@ -219,10 +144,5 @@ function displayFields(form, customHTML) {
         customHTML.append('$(\'*[name="Aprov_D_Executi"]\').closest("li").hide()');
         customHTML.append('</script>');
         customHTML.append('<script>');
-        customHTML.append('$(\'*[name="ajustes_R_O_E"]\').css(\'display\', \'none\');var closers = $(\'*[name="ajustes_R_O_E"]\').closest(\'.form-field\').find(\'input, textarea, select\');var hideDiv = true;$.each(closers, function(i, close) {if (close.style.display != \'none\' && close.type != \'hidden\') {hideDiv = false;}});if (hideDiv == true) {$(\'*[name="ajustes_R_O_E"]\').closest(\'.form-field\').css(\'display\', \'none\');}');
-        customHTML.append('</script>');
-        customHTML.append('<script>');
-        customHTML.append('$(\'*[name="ajustes_R_O_E"]\').closest("li").hide()');
-        customHTML.append('</script>');
     }
 }
