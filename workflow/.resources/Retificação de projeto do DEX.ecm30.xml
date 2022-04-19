@@ -29,7 +29,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Retificação de projeto do Departamento Executivo</processId>
-      <version>20</version>
+      <version>21</version>
     </processDefinitionVersionPK>
     <versionDescription>Nova Versão.</versionDescription>
     <formId>4113</formId>
@@ -1068,7 +1068,7 @@
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
       <periodId></periodId>
-      <stateType>0</stateType>
+      <stateType>6</stateType>
       <bpmnType>60</bpmnType>
       <signalId>0</signalId>
       <counterSign>false</counterSign>
@@ -1115,7 +1115,7 @@
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
       <periodId></periodId>
-      <stateType>0</stateType>
+      <stateType>6</stateType>
       <bpmnType>60</bpmnType>
       <signalId>0</signalId>
       <counterSign>false</counterSign>
@@ -1162,7 +1162,7 @@
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
       <periodId></periodId>
-      <stateType>0</stateType>
+      <stateType>6</stateType>
       <bpmnType>60</bpmnType>
       <signalId>0</signalId>
       <counterSign>false</counterSign>
@@ -1177,7 +1177,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>17</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1190,7 +1190,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>17</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1204,7 +1204,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>21</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1217,7 +1217,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>21</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1231,7 +1231,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>3</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>21</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1243,7 +1243,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>29</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1255,7 +1255,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>29</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1269,7 +1269,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>3</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>29</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1281,7 +1281,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>39</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1294,7 +1294,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>39</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1307,13 +1307,12 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>3</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>39</sequence>
       </conditionProcessStatePK>
-      <condition>false</condition>
+      <condition></condition>
       <destinationSequenceId>10</destinationSequenceId>
       <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;10&lt;/BaseActivity&gt;&lt;Returns&gt;All&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
-      <engineAllocationId>Executor Atividade</engineAllocationId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
     <ConditionProcessState>
@@ -1321,7 +1320,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>1</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>43</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1334,7 +1333,7 @@
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
         <expressionOrder>2</expressionOrder>
-        <version>20</version>
+        <version>21</version>
         <sequence>43</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -1937,25 +1936,25 @@
         <processId>Retificação de projeto do DEX</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function intermediateconditional59() {
-	var solicitacao = getValue(&quot;WKNumProces&quot;);
-	var finalizado  = false;
-	
-	var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);
-	var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
-	
-	if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {
-		if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Assinado&quot;  ||
-			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Rejeitado&quot; ||
-			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Cancelado&quot;){
-			finalizado = true;
-		}
-	} else {
-		log.info(&quot;&gt;&gt;&gt; Não localizado Formulário Auxiliar, irá finalizar com erros&quot;);
-		finalizado = true;
-	}
-	
-	return finalizado;
+      <eventDescription>function intermediateconditional59() {&#xd;
+	var solicitacao = getValue(&quot;WKNumProces&quot;);&#xd;
+	var finalizado  = false;&#xd;
+	&#xd;
+	var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);&#xd;
+	var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);&#xd;
+	&#xd;
+	if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {&#xd;
+		if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Assinado&quot;  ||&#xd;
+			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Rejeitado&quot; ||&#xd;
+			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Cancelado&quot;){&#xd;
+			finalizado = true;&#xd;
+		}&#xd;
+	} else {&#xd;
+		log.info(&quot;&gt;&gt;&gt; Não localizado Formulário Auxiliar, irá finalizar com erros&quot;);&#xd;
+		finalizado = true;&#xd;
+	}&#xd;
+	&#xd;
+	return finalizado;&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
@@ -1965,41 +1964,41 @@
         <processId>Retificação de projeto do DEX</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function servicetask65(attempt, message) {
-    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK65 - INICIO&quot;)
-	var atividade = getValue(&quot;WKNumState&quot;)
-	var solicitacao = getValue(&quot;WKNumProces&quot;)
-
-    try{
-        DatasetFactory.getDataset(&quot;ds_upload_vertsign&quot;, null, null, null);
-        var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);
-		var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
-
-        if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {
-            var c2 = DatasetFactory.createConstraint(&apos;codArquivo&apos;, form_aux.getValue(0, &apos;codArquivo&apos;), form_aux.getValue(0, &apos;codArquivo&apos;), ConstraintType.MUST);
-			var ds_upload = DatasetFactory.getDataset(&quot;ds_upload_vertsign_manual&quot;, null, [c2], null);
-
-            if (ds_upload){				
-				
-				form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
-				if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {
-					log.info(&quot;&gt;&gt;&gt; Status do Documento: &quot; + form_aux.getValue(0, &quot;statusAssinatura&quot;));	
-					
-					if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Enviando para assinatura&quot;){
-						throw &quot;Houve erros durante o envio do documento, verifique novamente.&quot;;
-					}
-				}
-				
-							
-			} else {
-                throw &quot;Não foi possível localizar Formulário Auxiliar com o código da solicitação&quot;;
-            };
-        }
-    } catch (e){
-        throw (&quot;Erro ao enviar documento para integração: &quot; + (e));
-    }
-    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK65 - FIM&quot;)
-
+      <eventDescription>function servicetask65(attempt, message) {&#xd;
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK65 - INICIO&quot;)&#xd;
+	var atividade = getValue(&quot;WKNumState&quot;)&#xd;
+	var solicitacao = getValue(&quot;WKNumProces&quot;)&#xd;
+&#xd;
+    try{&#xd;
+        DatasetFactory.getDataset(&quot;ds_upload_vertsign&quot;, null, null, null);&#xd;
+        var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);&#xd;
+		var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);&#xd;
+&#xd;
+        if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {&#xd;
+            var c2 = DatasetFactory.createConstraint(&apos;codArquivo&apos;, form_aux.getValue(0, &apos;codArquivo&apos;), form_aux.getValue(0, &apos;codArquivo&apos;), ConstraintType.MUST);&#xd;
+			var ds_upload = DatasetFactory.getDataset(&quot;ds_upload_vertsign_manual&quot;, null, [c2], null);&#xd;
+&#xd;
+            if (ds_upload){				&#xd;
+				&#xd;
+				form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);&#xd;
+				if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {&#xd;
+					log.info(&quot;&gt;&gt;&gt; Status do Documento: &quot; + form_aux.getValue(0, &quot;statusAssinatura&quot;));	&#xd;
+					&#xd;
+					if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Enviando para assinatura&quot;){&#xd;
+						throw &quot;Houve erros durante o envio do documento, verifique novamente.&quot;;&#xd;
+					}&#xd;
+				}&#xd;
+				&#xd;
+							&#xd;
+			} else {&#xd;
+                throw &quot;Não foi possível localizar Formulário Auxiliar com o código da solicitação&quot;;&#xd;
+            };&#xd;
+        }&#xd;
+    } catch (e){&#xd;
+        throw (&quot;Erro ao enviar documento para integração: &quot; + (e));&#xd;
+    }&#xd;
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK65 - FIM&quot;)&#xd;
+&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
@@ -2009,37 +2008,37 @@
         <processId>Retificação de projeto do DEX</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function servicetask62(attempt, message) {
-    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK62 - INICIO&quot;)
-    var nr_pasta = hAPI.getCardValue(&quot;nr_pasta&quot;);
-    var idDocumento = hAPI.getCardValue(&quot;doc_id&quot;)
-    var solicitacao = getValue(&quot;WKNumProces&quot;)
-    anexaDocumentoAssinado(idDocumento,nr_pasta,solicitacao)
-    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK62 - FIM&quot;)
-}
-
-function anexaDocumentoAssinado(idDocumento, nr_pasta,nr_solicitacao) {
-    var constraints = [DatasetFactory.createConstraint(&apos;codArquivo&apos;, idDocumento, idDocumento, ConstraintType.MUST)];
-    chaveArquivoAssinado = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, [&quot;chaveArquivo&quot;], constraints, null);
-    constraints = [DatasetFactory.createConstraint(&apos;chaveArquivo&apos;, chaveArquivoAssinado.getValue(0, &apos;chaveArquivo&apos;), chaveArquivoAssinado.getValue(0, &apos;chaveArquivo&apos;), ConstraintType.MUST)];
-    arquivoassinado = DatasetFactory.getDataset(&apos;recuperaDocumentoAssinado_vertsign&apos;, null, constraints, null);
-    
-
-    var nm_arquivo = &quot;solic_&quot; + nr_solicitacao + &quot;_assinado.pdf&quot;;
-    var constraintsDocument = new Array();
-	constraintsDocument.push(DatasetFactory.createConstraint(&quot;nm_arquivo&quot;, nm_arquivo, nm_arquivo, ConstraintType.MUST));
-	constraintsDocument.push(DatasetFactory.createConstraint(&quot;nr_pasta&quot;, nr_pasta, nr_pasta, ConstraintType.MUST));
-	constraintsDocument.push(DatasetFactory.createConstraint(&quot;base64&quot;, arquivoassinado.getValue(0, &apos;arquivo_base64&apos;), arquivoassinado.getValue(0, &apos;arquivo_base64&apos;), ConstraintType.MUST));
-	var dsDocument = DatasetFactory.getDataset(&apos;ds_grava_documento&apos;, null, constraintsDocument, null)
-	dsDocument == &apos;&apos;
-	if (dsDocument != null &amp;&amp; dsDocument != undefined) {
-	      if (dsDocument.values.length &gt; 0) {
-	          documentId = dsDocument.getValue(0, &apos;documentId&apos;);
-	          documentId = replaceString(documentId)
-	          hAPI.setCardValue(&quot;doc_id_assinado&quot;,documentId)
-	          hAPI.attachDocument(documentId);
-	      }
-	 }
+      <eventDescription>function servicetask62(attempt, message) {&#xd;
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK62 - INICIO&quot;)&#xd;
+    var nr_pasta = hAPI.getCardValue(&quot;nr_pasta&quot;);&#xd;
+    var idDocumento = hAPI.getCardValue(&quot;doc_id&quot;)&#xd;
+    var solicitacao = getValue(&quot;WKNumProces&quot;)&#xd;
+    anexaDocumentoAssinado(idDocumento,nr_pasta,solicitacao)&#xd;
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK62 - FIM&quot;)&#xd;
+}&#xd;
+&#xd;
+function anexaDocumentoAssinado(idDocumento, nr_pasta,nr_solicitacao) {&#xd;
+    var constraints = [DatasetFactory.createConstraint(&apos;codArquivo&apos;, idDocumento, idDocumento, ConstraintType.MUST)];&#xd;
+    chaveArquivoAssinado = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, [&quot;chaveArquivo&quot;], constraints, null);&#xd;
+    constraints = [DatasetFactory.createConstraint(&apos;chaveArquivo&apos;, chaveArquivoAssinado.getValue(0, &apos;chaveArquivo&apos;), chaveArquivoAssinado.getValue(0, &apos;chaveArquivo&apos;), ConstraintType.MUST)];&#xd;
+    arquivoassinado = DatasetFactory.getDataset(&apos;recuperaDocumentoAssinado_vertsign&apos;, null, constraints, null);&#xd;
+    &#xd;
+&#xd;
+    var nm_arquivo = &quot;solic_&quot; + nr_solicitacao + &quot;_assinado.pdf&quot;;&#xd;
+    var constraintsDocument = new Array();&#xd;
+	constraintsDocument.push(DatasetFactory.createConstraint(&quot;nm_arquivo&quot;, nm_arquivo, nm_arquivo, ConstraintType.MUST));&#xd;
+	constraintsDocument.push(DatasetFactory.createConstraint(&quot;nr_pasta&quot;, nr_pasta, nr_pasta, ConstraintType.MUST));&#xd;
+	constraintsDocument.push(DatasetFactory.createConstraint(&quot;base64&quot;, arquivoassinado.getValue(0, &apos;arquivo_base64&apos;), arquivoassinado.getValue(0, &apos;arquivo_base64&apos;), ConstraintType.MUST));&#xd;
+	var dsDocument = DatasetFactory.getDataset(&apos;ds_grava_documento&apos;, null, constraintsDocument, null)&#xd;
+	dsDocument == &apos;&apos;&#xd;
+	if (dsDocument != null &amp;&amp; dsDocument != undefined) {&#xd;
+	      if (dsDocument.values.length &gt; 0) {&#xd;
+	          documentId = dsDocument.getValue(0, &apos;documentId&apos;);&#xd;
+	          documentId = replaceString(documentId)&#xd;
+	          hAPI.setCardValue(&quot;doc_id_assinado&quot;,documentId)&#xd;
+	          hAPI.attachDocument(documentId);&#xd;
+	      }&#xd;
+	 }&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
@@ -2049,44 +2048,44 @@ function anexaDocumentoAssinado(idDocumento, nr_pasta,nr_solicitacao) {
         <processId>Retificação de projeto do DEX</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function beforeSendData(customField, customFact) {
-
-    customField[0] = hAPI.getCardValue(&quot;Nome_do_projeto&quot;);
-
-    customField[1] = hAPI.getCardValue(&quot;area_responsave&quot;);
-
-    customField[2] = hAPI.getCardValue(&quot;resp_pelo_proj&quot;);
-
-    customField[3] = hAPI.getCardValue(&quot;data_inicio&quot;);
-
-    customField[4] = hAPI.getCardValue(&quot;data_fim&quot;);
-
-    customField[5] = hAPI.getCardValue(&quot;valid_P_E&quot;);
-
-    customField[6] = hAPI.getCardValue(&quot;aprov_R_P&quot;);
-
-    customField[7] = hAPI.getCardValue(&quot;Aprov_D_adjunto&quot;);
-
-    customField[8] = hAPI.getCardValue(&quot;ajustes_R_P&quot;);
-
-    customField[9] = hAPI.getCardValue(&quot;Descricao_proj&quot;);
-
-    customField[10] = hAPI.getCardValue(&quot;link_scopi&quot;);
-
-    customField[11] = hAPI.getCardValue(&quot;Aprov_Resp_O_E&quot;);
-
-    customField[12] = hAPI.getCardValue(&quot;Aprov_D_Executi&quot;);
-
-    customField[13] = hAPI.getCardValue(&quot;ajustes_R_O_E&quot;);
-
-    customField[14] = hAPI.getCardValue(&quot;ajustes_P_E&quot;);
-
-    customField[15] = hAPI.getCardValue(&quot;Ajustes_D_Adjun&quot;);
-
-    customField[16] = hAPI.getCardValue(&quot;Ajustes_D_Execu&quot;);
-
-    customField[17] = hAPI.getCardValue(&quot;Ajustes_conside&quot;);
-}
+      <eventDescription>function beforeSendData(customField, customFact) {&#xd;
+&#xd;
+    customField[0] = hAPI.getCardValue(&quot;Nome_do_projeto&quot;);&#xd;
+&#xd;
+    customField[1] = hAPI.getCardValue(&quot;area_responsave&quot;);&#xd;
+&#xd;
+    customField[2] = hAPI.getCardValue(&quot;resp_pelo_proj&quot;);&#xd;
+&#xd;
+    customField[3] = hAPI.getCardValue(&quot;data_inicio&quot;);&#xd;
+&#xd;
+    customField[4] = hAPI.getCardValue(&quot;data_fim&quot;);&#xd;
+&#xd;
+    customField[5] = hAPI.getCardValue(&quot;valid_P_E&quot;);&#xd;
+&#xd;
+    customField[6] = hAPI.getCardValue(&quot;aprov_R_P&quot;);&#xd;
+&#xd;
+    customField[7] = hAPI.getCardValue(&quot;Aprov_D_adjunto&quot;);&#xd;
+&#xd;
+    customField[8] = hAPI.getCardValue(&quot;ajustes_R_P&quot;);&#xd;
+&#xd;
+    customField[9] = hAPI.getCardValue(&quot;Descricao_proj&quot;);&#xd;
+&#xd;
+    customField[10] = hAPI.getCardValue(&quot;link_scopi&quot;);&#xd;
+&#xd;
+    customField[11] = hAPI.getCardValue(&quot;Aprov_Resp_O_E&quot;);&#xd;
+&#xd;
+    customField[12] = hAPI.getCardValue(&quot;Aprov_D_Executi&quot;);&#xd;
+&#xd;
+    customField[13] = hAPI.getCardValue(&quot;ajustes_R_O_E&quot;);&#xd;
+&#xd;
+    customField[14] = hAPI.getCardValue(&quot;ajustes_P_E&quot;);&#xd;
+&#xd;
+    customField[15] = hAPI.getCardValue(&quot;Ajustes_D_Adjun&quot;);&#xd;
+&#xd;
+    customField[16] = hAPI.getCardValue(&quot;Ajustes_D_Execu&quot;);&#xd;
+&#xd;
+    customField[17] = hAPI.getCardValue(&quot;Ajustes_conside&quot;);&#xd;
+}&#xd;
 </eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
@@ -2096,206 +2095,206 @@ function anexaDocumentoAssinado(idDocumento, nr_pasta,nr_solicitacao) {
         <processId>Retificação de projeto do DEX</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function servicetask60(attempt, message) {
-    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK60 - INICIO&quot;)
-	var nr_pasta = hAPI.getCardValue(&quot;nr_pasta&quot;);
-	var idDocumento = hAPI.getCardValue(&quot;doc_id&quot;)
-	var solicitacao = getValue(&quot;WKNumProces&quot;)
-	var nm_Arquivo = &quot;solic_&quot; + solicitacao + &quot;_assinado.pdf&quot;;
-	
-	var data = new Date().toLocaleDateString(&apos;pt-BR&apos;);
-	var horario = new Date().toLocaleTimeString(&apos;pt-BR&apos;);
-	
-//	jsonStringify()
-	dadosAssinantes=obterAssinantes()
-	parametrosAssinatura=enviaParaAssinatura(nr_pasta,dadosAssinantes,idDocumento,nm_Arquivo,solicitacao,data,horario)
-	rodarDataset(parametrosAssinatura)
-	log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK60 - FIM&quot;)
-}
-
-function obterAssinantes(){
-    var solicitacao = getValue(&quot;WKNumProces&quot;)
-    var arraySigners = [];
-    var emails=[]
-    var atividades = [19,27];
-    var responsavelEnvio = &apos;&apos;
-    var nomeResponsavelEnvio = &apos;&apos;
-    var processInstanceId = DatasetFactory.createConstraint(&apos;processInstanceId&apos;, solicitacao, solicitacao, ConstraintType.MUST);
-    
-    for (var i = 0; i &lt; atividades.length; i++) {
-    	var constraints = new Array();
-        var userMail = &apos;&apos;
-
-        // Busca a atividade inserida
-    	var choosedSequence = DatasetFactory.createConstraint(&apos;choosedSequence&apos;, atividades[i], atividades[i], ConstraintType.MUST);
-        
-        // Busca o id do usuário responsavel por uma tarefa
-        constraints.push(processInstanceId)
-        constraints.push(choosedSequence)
-        var retornoProcessTask = DatasetFactory.getDataset(&apos;processTask&apos;, [&quot;choosedColleagueId&quot;], constraints, null);
-
-        if (retornoProcessTask &amp;&amp; retornoProcessTask.rowsCount &gt; 0) {	
-			userId = retornoProcessTask.getValue(retornoProcessTask.rowsCount-1, &quot;choosedColleagueId&quot;);
-		}
-        if(userId == null || userId == &quot;&quot;){
-    		log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK84 - USERID&quot;)
-            throw &quot;RETIFICAÇÃO DE PROCESSOS TASK60&quot;
-    	}
-
-        // Busca o email do usuário através do ID dele
-        constraints = [DatasetFactory.createConstraint(&quot;colleagueId&quot;, userId, userId, ConstraintType.MUST)];
-        var retornoColleague = DatasetFactory.getDataset(&apos;colleague&apos;, [&quot;mail&quot;], constraints, null);
-
-        if (retornoColleague &amp;&amp; retornoColleague.rowsCount &gt; 0) {
-			userMail = retornoColleague.getValue(0, &quot;mail&quot;);
-		}
-        if(userMail == null || userMail == &quot;&quot;){
-    		log.info(&quot;#### &gt;&gt; ENCERRAMENTO DE PROCESSOS TASK60 - USERMAIL&quot;)
-            throw &quot;ENCERRAMENTO DE PROCESSOS TASK60&quot;
-    	}
-        
-        if(emails.indexOf(String(userMail))==-1){
-        	emails.push(String(userMail))
-        	constraints = []
-	        constraints = [DatasetFactory.createConstraint(&apos;email&apos;, userMail, userMail, ConstraintType.MUST)];
-	        assinante = DatasetFactory.getDataset(&apos;ds_busca_assinante&apos;, null, constraints, null);
-	        
-	        arraySigners.push({
-	            nome: new String(assinante.getValue(0, &apos;nome&apos;)),
-	            email: new String(userMail),
-	            cpf: new String(assinante.getValue(0, &apos;cpf&apos;)),
-	            tipo: new String(assinante.getValue(0, &apos;tipoAssinatura&apos;)),
-	            status: &quot;Pendente&quot;
-	        });
-	        responsavelEnvio = userId
-	        nomeResponsavelEnvio = assinante.getValue(0, &apos;nome&apos;)
-        }
-    }
-    if (arraySigners.length == 0) {
-        log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK60 - ARRAYSIGNERS&quot;)
-        throw &quot;erro&quot;
-    }
-
-    var retorno = {
-    	&quot;assinantes&quot;:arraySigners,
-    	&quot;idReponsavelEnvio&quot;:responsavelEnvio,
-    	&quot;nomeResponsavelEnvio&quot;:nomeResponsavelEnvio
-    }
-    return retorno
-}
-
-function enviaParaAssinatura(nr_pasta, dadosResponsavel, idDocumento, nm_Arquivo, numeroProcesso,data,horario) {
-    // Cria registro de formulario
-    var nmArquivo = {
-        name: &quot;nmArquivo&quot;,
-        value: nm_Arquivo
-    };
-    var codArquivo = {
-        name: &quot;codArquivo&quot;,
-        value: idDocumento
-    };
-    var vrArquivo = {
-        name: &quot;vrArquivo&quot;,
-        value: &apos;1000&apos;
-    };
-    var codPasta = {
-        name: &quot;codPasta&quot;,
-        value: nr_pasta
-    };
-    var codRemetente = {
-        name: &quot;codRemetente&quot;,
-        value: dadosResponsavel.idReponsavelEnvio
-    };
-    var nmRemetente = {
-        name: &quot;nmRemetente&quot;,
-        value: dadosResponsavel.nomeResponsavelEnvio
-
-    };
-    var formDescription = {
-        name: &quot;formDescription&quot;,
-        value: nm_Arquivo
-    };
-    var status = {
-        name: &quot;status&quot;,
-        value: &quot;Enviando para assinatura&quot;
-    };
-    var metodo = {
-        name: &quot;metodo&quot;,
-        value: &quot;create&quot;
-    };
-
-    var dataEnvio = {
-        name: &quot;dataEnvio&quot;,
-        value: data
-    };
-    var jsonSigners = {
-        name: &quot;jsonSigners&quot;,
-        value: jsonStringify(dadosResponsavel.assinantes)
-    };
-
-    var horaEnvio = {
-        name: &quot;horaEnvio&quot;,
-        value: horario
-    };
-
-    var numSolic = {
-        name: &quot;numSolic&quot;,
-        value: numeroProcesso
-    };
-
-    var choosedState = {
-        name: &quot;choosedState&quot;,
-        value: &quot;45&quot;
-    };
-
-    var constraints = [jsonSigners, nmArquivo, codArquivo, vrArquivo, codPasta, codRemetente, nmRemetente, formDescription, status, metodo, dataEnvio, horaEnvio, numSolic, choosedState];
-    return constraints;
-}
-
-function rodarDataset(params) {
-    constraints = []
-    params.forEach(function (param) {
-        constraints.push(DatasetFactory.createConstraint(param.name, param.value, param.value, ConstraintType.MUST));
-    });
-    if (constraints.length &gt; 0) {
-        var dsAux = DatasetFactory.getDataset(&quot;ds_auxiliar_vertsign&quot;, null, constraints, null);
-        if(dsAux == null || dsAux.rowsCount == null){
-    		throw &quot;Falha de comunicação com a VertSign. &quot;
-    		+ &quot;O TOTVS Fluig não conseguir realizar a comunicação, tente novamente mais tarde&quot;;
-    	}
-        if (dsAux.rowsCount &gt; 0) {
-            if (dsAux.getValue(0, &quot;Result&quot;) === &quot;OK&quot;) {
-            	log.info(&quot;Enviando documento para assinatura&quot;);
-            }
-        }
-    }
-}
-
-function jsonStringify(obj) {
-	if(obj == null) {
-	    return &quot;null&quot;;
-	} else if(Object.prototype.toString.call(obj) === &apos;[object Array]&apos;) {
-	    var str = &quot;[&quot;;
-	    if(obj.length &gt; 0) {
-	      str += jsonStringify(obj[0]);
-	      for(var i = 1; i &lt; obj.length; i++) {
-	        str += &quot;,&quot; + jsonStringify(obj[i]);
-	      }
-	    }
-	    str += &quot;]&quot;;
-	    return str;
-	} else if(Object.prototype.toString.call(obj) === &apos;[object Object]&apos;) {
-	    var str = &quot;{&quot;;
-	    var first = true;
-	    for(attr in obj) {
-	      str += (!first ? &quot;,&quot; : &quot;&quot;) + &quot;\&quot;&quot; + attr + &quot;\&quot;:&quot; + jsonStringify(obj[attr]);
-	      first = false;
-	    }
-	    str += &quot;}&quot;;
-	    return str;
-	} else {
-	    return &quot;\&quot;&quot; + obj + &quot;\&quot;&quot;;
-	}
+      <eventDescription>function servicetask60(attempt, message) {&#xd;
+    log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK60 - INICIO&quot;)&#xd;
+	var nr_pasta = hAPI.getCardValue(&quot;nr_pasta&quot;);&#xd;
+	var idDocumento = hAPI.getCardValue(&quot;doc_id&quot;)&#xd;
+	var solicitacao = getValue(&quot;WKNumProces&quot;)&#xd;
+	var nm_Arquivo = &quot;solic_&quot; + solicitacao + &quot;_assinado.pdf&quot;;&#xd;
+	&#xd;
+	var data = new Date().toLocaleDateString(&apos;pt-BR&apos;);&#xd;
+	var horario = new Date().toLocaleTimeString(&apos;pt-BR&apos;);&#xd;
+	&#xd;
+//	jsonStringify()&#xd;
+	dadosAssinantes=obterAssinantes()&#xd;
+	parametrosAssinatura=enviaParaAssinatura(nr_pasta,dadosAssinantes,idDocumento,nm_Arquivo,solicitacao,data,horario)&#xd;
+	rodarDataset(parametrosAssinatura)&#xd;
+	log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK60 - FIM&quot;)&#xd;
+}&#xd;
+&#xd;
+function obterAssinantes(){&#xd;
+    var solicitacao = getValue(&quot;WKNumProces&quot;)&#xd;
+    var arraySigners = [];&#xd;
+    var emails=[]&#xd;
+    var atividades = [19,27];&#xd;
+    var responsavelEnvio = &apos;&apos;&#xd;
+    var nomeResponsavelEnvio = &apos;&apos;&#xd;
+    var processInstanceId = DatasetFactory.createConstraint(&apos;processInstanceId&apos;, solicitacao, solicitacao, ConstraintType.MUST);&#xd;
+    &#xd;
+    for (var i = 0; i &lt; atividades.length; i++) {&#xd;
+    	var constraints = new Array();&#xd;
+        var userMail = &apos;&apos;&#xd;
+&#xd;
+        // Busca a atividade inserida&#xd;
+    	var choosedSequence = DatasetFactory.createConstraint(&apos;choosedSequence&apos;, atividades[i], atividades[i], ConstraintType.MUST);&#xd;
+        &#xd;
+        // Busca o id do usuário responsavel por uma tarefa&#xd;
+        constraints.push(processInstanceId)&#xd;
+        constraints.push(choosedSequence)&#xd;
+        var retornoProcessTask = DatasetFactory.getDataset(&apos;processTask&apos;, [&quot;choosedColleagueId&quot;], constraints, null);&#xd;
+&#xd;
+        if (retornoProcessTask &amp;&amp; retornoProcessTask.rowsCount &gt; 0) {	&#xd;
+			userId = retornoProcessTask.getValue(retornoProcessTask.rowsCount-1, &quot;choosedColleagueId&quot;);&#xd;
+		}&#xd;
+        if(userId == null || userId == &quot;&quot;){&#xd;
+    		log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK84 - USERID&quot;)&#xd;
+            throw &quot;RETIFICAÇÃO DE PROCESSOS TASK60&quot;&#xd;
+    	}&#xd;
+&#xd;
+        // Busca o email do usuário através do ID dele&#xd;
+        constraints = [DatasetFactory.createConstraint(&quot;colleagueId&quot;, userId, userId, ConstraintType.MUST)];&#xd;
+        var retornoColleague = DatasetFactory.getDataset(&apos;colleague&apos;, [&quot;mail&quot;], constraints, null);&#xd;
+&#xd;
+        if (retornoColleague &amp;&amp; retornoColleague.rowsCount &gt; 0) {&#xd;
+			userMail = retornoColleague.getValue(0, &quot;mail&quot;);&#xd;
+		}&#xd;
+        if(userMail == null || userMail == &quot;&quot;){&#xd;
+    		log.info(&quot;#### &gt;&gt; ENCERRAMENTO DE PROCESSOS TASK60 - USERMAIL&quot;)&#xd;
+            throw &quot;ENCERRAMENTO DE PROCESSOS TASK60&quot;&#xd;
+    	}&#xd;
+        &#xd;
+        if(emails.indexOf(String(userMail))==-1){&#xd;
+        	emails.push(String(userMail))&#xd;
+        	constraints = []&#xd;
+	        constraints = [DatasetFactory.createConstraint(&apos;email&apos;, userMail, userMail, ConstraintType.MUST)];&#xd;
+	        assinante = DatasetFactory.getDataset(&apos;ds_busca_assinante&apos;, null, constraints, null);&#xd;
+	        &#xd;
+	        arraySigners.push({&#xd;
+	            nome: new String(assinante.getValue(0, &apos;nome&apos;)),&#xd;
+	            email: new String(userMail),&#xd;
+	            cpf: new String(assinante.getValue(0, &apos;cpf&apos;)),&#xd;
+	            tipo: new String(assinante.getValue(0, &apos;tipoAssinatura&apos;)),&#xd;
+	            status: &quot;Pendente&quot;&#xd;
+	        });&#xd;
+	        responsavelEnvio = userId&#xd;
+	        nomeResponsavelEnvio = assinante.getValue(0, &apos;nome&apos;)&#xd;
+        }&#xd;
+    }&#xd;
+    if (arraySigners.length == 0) {&#xd;
+        log.info(&quot;#### &gt;&gt; RETIFICAÇÃO DE PROCESSOS TASK60 - ARRAYSIGNERS&quot;)&#xd;
+        throw &quot;erro&quot;&#xd;
+    }&#xd;
+&#xd;
+    var retorno = {&#xd;
+    	&quot;assinantes&quot;:arraySigners,&#xd;
+    	&quot;idReponsavelEnvio&quot;:responsavelEnvio,&#xd;
+    	&quot;nomeResponsavelEnvio&quot;:nomeResponsavelEnvio&#xd;
+    }&#xd;
+    return retorno&#xd;
+}&#xd;
+&#xd;
+function enviaParaAssinatura(nr_pasta, dadosResponsavel, idDocumento, nm_Arquivo, numeroProcesso,data,horario) {&#xd;
+    // Cria registro de formulario&#xd;
+    var nmArquivo = {&#xd;
+        name: &quot;nmArquivo&quot;,&#xd;
+        value: nm_Arquivo&#xd;
+    };&#xd;
+    var codArquivo = {&#xd;
+        name: &quot;codArquivo&quot;,&#xd;
+        value: idDocumento&#xd;
+    };&#xd;
+    var vrArquivo = {&#xd;
+        name: &quot;vrArquivo&quot;,&#xd;
+        value: &apos;1000&apos;&#xd;
+    };&#xd;
+    var codPasta = {&#xd;
+        name: &quot;codPasta&quot;,&#xd;
+        value: nr_pasta&#xd;
+    };&#xd;
+    var codRemetente = {&#xd;
+        name: &quot;codRemetente&quot;,&#xd;
+        value: dadosResponsavel.idReponsavelEnvio&#xd;
+    };&#xd;
+    var nmRemetente = {&#xd;
+        name: &quot;nmRemetente&quot;,&#xd;
+        value: dadosResponsavel.nomeResponsavelEnvio&#xd;
+&#xd;
+    };&#xd;
+    var formDescription = {&#xd;
+        name: &quot;formDescription&quot;,&#xd;
+        value: nm_Arquivo&#xd;
+    };&#xd;
+    var status = {&#xd;
+        name: &quot;status&quot;,&#xd;
+        value: &quot;Enviando para assinatura&quot;&#xd;
+    };&#xd;
+    var metodo = {&#xd;
+        name: &quot;metodo&quot;,&#xd;
+        value: &quot;create&quot;&#xd;
+    };&#xd;
+&#xd;
+    var dataEnvio = {&#xd;
+        name: &quot;dataEnvio&quot;,&#xd;
+        value: data&#xd;
+    };&#xd;
+    var jsonSigners = {&#xd;
+        name: &quot;jsonSigners&quot;,&#xd;
+        value: jsonStringify(dadosResponsavel.assinantes)&#xd;
+    };&#xd;
+&#xd;
+    var horaEnvio = {&#xd;
+        name: &quot;horaEnvio&quot;,&#xd;
+        value: horario&#xd;
+    };&#xd;
+&#xd;
+    var numSolic = {&#xd;
+        name: &quot;numSolic&quot;,&#xd;
+        value: numeroProcesso&#xd;
+    };&#xd;
+&#xd;
+    var choosedState = {&#xd;
+        name: &quot;choosedState&quot;,&#xd;
+        value: &quot;45&quot;&#xd;
+    };&#xd;
+&#xd;
+    var constraints = [jsonSigners, nmArquivo, codArquivo, vrArquivo, codPasta, codRemetente, nmRemetente, formDescription, status, metodo, dataEnvio, horaEnvio, numSolic, choosedState];&#xd;
+    return constraints;&#xd;
+}&#xd;
+&#xd;
+function rodarDataset(params) {&#xd;
+    constraints = []&#xd;
+    params.forEach(function (param) {&#xd;
+        constraints.push(DatasetFactory.createConstraint(param.name, param.value, param.value, ConstraintType.MUST));&#xd;
+    });&#xd;
+    if (constraints.length &gt; 0) {&#xd;
+        var dsAux = DatasetFactory.getDataset(&quot;ds_auxiliar_vertsign&quot;, null, constraints, null);&#xd;
+        if(dsAux == null || dsAux.rowsCount == null){&#xd;
+    		throw &quot;Falha de comunicação com a VertSign. &quot;&#xd;
+    		+ &quot;O TOTVS Fluig não conseguir realizar a comunicação, tente novamente mais tarde&quot;;&#xd;
+    	}&#xd;
+        if (dsAux.rowsCount &gt; 0) {&#xd;
+            if (dsAux.getValue(0, &quot;Result&quot;) === &quot;OK&quot;) {&#xd;
+            	log.info(&quot;Enviando documento para assinatura&quot;);&#xd;
+            }&#xd;
+        }&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+function jsonStringify(obj) {&#xd;
+	if(obj == null) {&#xd;
+	    return &quot;null&quot;;&#xd;
+	} else if(Object.prototype.toString.call(obj) === &apos;[object Array]&apos;) {&#xd;
+	    var str = &quot;[&quot;;&#xd;
+	    if(obj.length &gt; 0) {&#xd;
+	      str += jsonStringify(obj[0]);&#xd;
+	      for(var i = 1; i &lt; obj.length; i++) {&#xd;
+	        str += &quot;,&quot; + jsonStringify(obj[i]);&#xd;
+	      }&#xd;
+	    }&#xd;
+	    str += &quot;]&quot;;&#xd;
+	    return str;&#xd;
+	} else if(Object.prototype.toString.call(obj) === &apos;[object Object]&apos;) {&#xd;
+	    var str = &quot;{&quot;;&#xd;
+	    var first = true;&#xd;
+	    for(attr in obj) {&#xd;
+	      str += (!first ? &quot;,&quot; : &quot;&quot;) + &quot;\&quot;&quot; + attr + &quot;\&quot;:&quot; + jsonStringify(obj[attr]);&#xd;
+	      first = false;&#xd;
+	    }&#xd;
+	    str += &quot;}&quot;;&#xd;
+	    return str;&#xd;
+	} else {&#xd;
+	    return &quot;\&quot;&quot; + obj + &quot;\&quot;&quot;;&#xd;
+	}&#xd;
 };</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
@@ -2404,7 +2403,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>7</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2415,7 +2414,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>20</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2426,7 +2425,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>20</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2437,7 +2436,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>25</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2448,7 +2447,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>25</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2459,7 +2458,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>25</linkSequence>
         <bendSequence>3</bendSequence>
       </processLinkBendPK>
@@ -2470,7 +2469,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>26</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2481,7 +2480,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>26</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2492,7 +2491,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>31</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2503,7 +2502,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>40</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2514,7 +2513,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>42</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2525,7 +2524,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>45</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2536,7 +2535,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>46</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2547,7 +2546,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>46</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2558,7 +2557,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>47</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2569,7 +2568,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>48</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2580,7 +2579,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>48</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2591,7 +2590,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>49</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2602,7 +2601,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>77</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -2613,7 +2612,7 @@ function jsonStringify(obj) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <linkSequence>77</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -2626,7 +2625,7 @@ function jsonStringify(obj) {
       <processStateTriggerPK>
         <companyId>1</companyId>
         <processId>Retificação de projeto do DEX</processId>
-        <version>20</version>
+        <version>21</version>
         <stateSequence>59</stateSequence>
         <triggerSequence>0</triggerSequence>
       </processStateTriggerPK>

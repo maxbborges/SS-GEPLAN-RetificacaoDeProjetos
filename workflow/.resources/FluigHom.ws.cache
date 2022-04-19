@@ -2,191 +2,94 @@
 <java version="1.8.0_311" class="java.beans.XMLDecoder">
  <object class="java.util.HashMap">
   <void method="put">
-   <string>volume</string>
-   <array class="java.lang.String" length="1">
-    <void index="0">
-     <string>Default</string>
-    </void>
-   </array>
-  </void>
-  <void method="put">
    <string>camposFormulario, documentoId = 4113</string>
-   <array class="java.lang.String" length="28">
+   <array class="java.lang.String" length="38">
     <void index="0">
+     <string>acao_01</string>
+    </void>
+    <void index="1">
      <string>Ajustes_conside</string>
     </void>
-    <void index="1">
+    <void index="2">
      <string>Ajustes_D_Adjun</string>
     </void>
-    <void index="2">
+    <void index="3">
      <string>Ajustes_D_Execu</string>
     </void>
-    <void index="3">
+    <void index="4">
      <string>ajustes_P_E</string>
     </void>
-    <void index="4">
+    <void index="5">
      <string>ajustes_R_O_E</string>
     </void>
-    <void index="5">
+    <void index="6">
      <string>ajustes_R_P</string>
     </void>
-    <void index="6">
+    <void index="7">
      <string>Aprov_D_adjunto</string>
     </void>
-    <void index="7">
+    <void index="8">
      <string>Aprov_D_Executi</string>
     </void>
-    <void index="8">
+    <void index="9">
      <string>aprov_R_P</string>
     </void>
-    <void index="9">
+    <void index="10">
      <string>Aprov_Resp_O_E</string>
     </void>
-    <void index="10">
+    <void index="11">
      <string>area_responsave</string>
     </void>
-    <void index="11">
+    <void index="12">
      <string>column1_3</string>
     </void>
-    <void index="12">
+    <void index="13">
      <string>column2_3</string>
     </void>
-    <void index="13">
+    <void index="14">
      <string>column3_3</string>
     </void>
-    <void index="14">
-     <string>data_fim</string>
-    </void>
     <void index="15">
-     <string>data_inicio</string>
+     <string>column4_3</string>
     </void>
     <void index="16">
+     <string>column5_3</string>
+    </void>
+    <void index="17">
+     <string>column6_3</string>
+    </void>
+    <void index="18">
+     <string>column7_3</string>
+    </void>
+    <void index="19">
+     <string>data_fim</string>
+    </void>
+    <void index="20">
+     <string>data_inicio</string>
+    </void>
+    <void index="21">
      <string>Descricao_proj</string>
     </void>
-    <void index="17">
-     <string>GOE</string>
-    </void>
-    <void index="18">
-     <string>id_area_responsave</string>
-    </void>
-    <void index="19">
-     <string>id_do_projeto</string>
-    </void>
-    <void index="20">
-     <string>id_OE</string>
-    </void>
-    <void index="21">
-     <string>link_scopi</string>
-    </void>
     <void index="22">
-     <string>matricula_GOE</string>
+     <string>doc_id</string>
     </void>
     <void index="23">
-     <string>matricula_resp_pelo_proj</string>
+     <string>doc_id_assinado</string>
     </void>
     <void index="24">
-     <string>Nome_do_projeto</string>
-    </void>
-    <void index="25">
-     <string>OE</string>
-    </void>
-    <void index="26">
-     <string>resp_pelo_proj</string>
-    </void>
-    <void index="27">
-     <string>valid_P_E</string>
-    </void>
-   </array>
-  </void>
-  <void method="put">
-   <string>camposFormulario, documentoId = 4114</string>
-   <array class="java.lang.String" length="37">
-    <void index="0">
-     <string>Ajus_Dir_Execu</string>
-    </void>
-    <void index="1">
-     <string>Ajustes_Di_adj</string>
-    </void>
-    <void index="2">
-     <string>Ajustes_P_E</string>
-    </void>
-    <void index="3">
-     <string>Ajustes_R_OE</string>
-    </void>
-    <void index="4">
-     <string>Ajustes_R_P</string>
-    </void>
-    <void index="5">
-     <string>Aprov_Dir_Exec</string>
-    </void>
-    <void index="6">
-     <string>aprov_DirAdj</string>
-    </void>
-    <void index="7">
-     <string>Aprov_R_OE</string>
-    </void>
-    <void index="8">
-     <string>Aprov_RP</string>
-    </void>
-    <void index="9">
-     <string>area_responsave</string>
-    </void>
-    <void index="10">
-     <string>column1_1</string>
-    </void>
-    <void index="11">
-     <string>column1_2</string>
-    </void>
-    <void index="12">
-     <string>column2_1</string>
-    </void>
-    <void index="13">
-     <string>column2_2</string>
-    </void>
-    <void index="14">
-     <string>column3_1</string>
-    </void>
-    <void index="15">
-     <string>column3_2</string>
-    </void>
-    <void index="16">
-     <string>column4_1</string>
-    </void>
-    <void index="17">
-     <string>column4_2</string>
-    </void>
-    <void index="18">
-     <string>Conside_solicit</string>
-    </void>
-    <void index="19">
-     <string>data_fim</string>
-    </void>
-    <void index="20">
-     <string>data_inicio</string>
-    </void>
-    <void index="21">
-     <string>Descri_projeto</string>
-    </void>
-    <void index="22">
-     <string>escopo</string>
-    </void>
-    <void index="23">
      <string>GOE</string>
     </void>
-    <void index="24">
+    <void index="25">
      <string>id_area_responsave</string>
     </void>
-    <void index="25">
+    <void index="26">
      <string>id_do_projeto</string>
     </void>
-    <void index="26">
-     <string>id_OE</string>
-    </void>
     <void index="27">
-     <string>just_escopo</string>
+     <string>id_OE</string>
     </void>
     <void index="28">
-     <string>just_prazo</string>
+     <string>indicador_01</string>
     </void>
     <void index="29">
      <string>link_scopi</string>
@@ -201,54 +104,27 @@
      <string>Nome_do_projeto</string>
     </void>
     <void index="33">
-     <string>OE</string>
+     <string>nr_pasta</string>
     </void>
     <void index="34">
-     <string>prazo</string>
+     <string>OE</string>
     </void>
     <void index="35">
      <string>resp_pelo_proj</string>
     </void>
     <void index="36">
-     <string>Valid_P_E</string>
+     <string>slc_retificacao_01</string>
+    </void>
+    <void index="37">
+     <string>valid_P_E</string>
     </void>
    </array>
   </void>
   <void method="put">
-   <string>camposFormulario, documentoId = 5462</string>
-   <array class="java.lang.String" length="11">
+   <string>volume</string>
+   <array class="java.lang.String" length="1">
     <void index="0">
-     <string>current_user_name</string>
-    </void>
-    <void index="1">
-     <string>dtAbrirDevolutiva</string>
-    </void>
-    <void index="2">
-     <string>hidden_lista_proximo_usuario</string>
-    </void>
-    <void index="3">
-     <string>hidden_proximo_usuario</string>
-    </void>
-    <void index="4">
-     <string>hidden_zfAbrirDevolutiva</string>
-    </void>
-    <void index="5">
-     <string>rdAbrirDevolutiva</string>
-    </void>
-    <void index="6">
-     <string>taAbrirDevolutiva</string>
-    </void>
-    <void index="7">
-     <string>taDevolutiva</string>
-    </void>
-    <void index="8">
-     <string>taListaDevolutivas</string>
-    </void>
-    <void index="9">
-     <string>usuarios_selecionados</string>
-    </void>
-    <void index="10">
-     <string>zfAbrirDevolutiva</string>
+     <string>Default</string>
     </void>
    </array>
   </void>
@@ -458,16 +334,6 @@
     <void method="add">
      <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
       <void property="groupDescription">
-       <string>Grupo</string>
-      </void>
-      <void property="groupId">
-       <string>Grupo do Flavio</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
-      <void property="groupDescription">
        <string>Moderator group DESPOLUIR</string>
       </void>
       <void property="groupId">
@@ -558,16 +424,6 @@
     <void method="add">
      <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
       <void property="groupDescription">
-       <string>SC_APROVACAO_ESTIMATIVA</string>
-      </void>
-      <void property="groupId">
-       <string>SC_APROVACAO_ESTIMATIVA</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
-      <void property="groupDescription">
        <string>Moderator group Boas práticas SEST SENAT</string>
       </void>
       <void property="groupId">
@@ -592,26 +448,6 @@
       </void>
       <void property="groupId">
        <string>Gestores Processo Inex</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
-      <void property="groupDescription">
-       <string>SEST_SENAT Gerência de planejamento</string>
-      </void>
-      <void property="groupId">
-       <string>SEST_SENAT_GEPLAN</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
-      <void property="groupDescription">
-       <string>Grupo_GeTec</string>
-      </void>
-      <void property="groupId">
-       <string>Grupo_GeTec</string>
       </void>
      </object>
     </void>
@@ -652,36 +488,6 @@
       </void>
       <void property="groupId">
        <string>administrador_fluig</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
-      <void property="groupDescription">
-       <string>Gerência Executiva de Operações Finalísticas</string>
-      </void>
-      <void property="groupId">
-       <string>demandas_gerencia_executiva_operacoes_finalisticas</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
-      <void property="groupDescription">
-       <string>Gerência Executiva de Planejamento Estratégico</string>
-      </void>
-      <void property="groupId">
-       <string>demandas_gerencia_executiva_plan_estrategico</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
-      <void property="groupDescription">
-       <string>Gerência Executiva de Engenharia</string>
-      </void>
-      <void property="groupId">
-       <string>demandas_gerencia_executiva_engenharia</string>
       </void>
      </object>
     </void>
@@ -938,16 +744,6 @@
     <void method="add">
      <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
       <void property="groupDescription">
-       <string>GEOPE - Monitoramento de Demandas - Devolutiva</string>
-      </void>
-      <void property="groupId">
-       <string>MONITORAMENTO_DE_DEMANDAS</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
-      <void property="groupDescription">
        <string>inex_ajusteGeral</string>
       </void>
       <void property="groupId">
@@ -1002,6 +798,26 @@
       </void>
       <void property="groupId">
        <string>_APROVACAO_DE_PROJETOS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>DIEX - Solicitacao de Pauta - Diretores_Secretarias</string>
+      </void>
+      <void property="groupId">
+       <string>_SOLICITACAO_DE_PAUTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>INEX Presidente comissão</string>
+      </void>
+      <void property="groupId">
+       <string>inex_presidente_comissao</string>
       </void>
      </object>
     </void>
@@ -2884,119 +2700,6 @@
        <string>Usuário</string>
       </void>
      </array>
-    </void>
-   </array>
-  </void>
-  <void method="put">
-   <string>camposFormulario, documentoId = 1599</string>
-   <array class="java.lang.String" length="36">
-    <void index="0">
-     <string>Ajustes_Conside</string>
-    </void>
-    <void index="1">
-     <string>Ajustes_D_Adju</string>
-    </void>
-    <void index="2">
-     <string>Ajustes_D_Execu</string>
-    </void>
-    <void index="3">
-     <string>Ajustes_P_E</string>
-    </void>
-    <void index="4">
-     <string>Ajustes_R_OE</string>
-    </void>
-    <void index="5">
-     <string>Ajustes_RP</string>
-    </void>
-    <void index="6">
-     <string>Aprova_D_Adjunt</string>
-    </void>
-    <void index="7">
-     <string>Aprova_D_Execut</string>
-    </void>
-    <void index="8">
-     <string>Aprova_GP</string>
-    </void>
-    <void index="9">
-     <string>Aprova_R_OE</string>
-    </void>
-    <void index="10">
-     <string>area_responsave</string>
-    </void>
-    <void index="11">
-     <string>cd_resp_pelo_proj</string>
-    </void>
-    <void index="12">
-     <string>cd_selecao_OE</string>
-    </void>
-    <void index="13">
-     <string>column1_1</string>
-    </void>
-    <void index="14">
-     <string>column2_1</string>
-    </void>
-    <void index="15">
-     <string>column3_1</string>
-    </void>
-    <void index="16">
-     <string>data_fim</string>
-    </void>
-    <void index="17">
-     <string>data_inicio</string>
-    </void>
-    <void index="18">
-     <string>gerar_pdf</string>
-    </void>
-    <void index="19">
-     <string>gestor_OE</string>
-    </void>
-    <void index="20">
-     <string>hd_controleAssinatura</string>
-    </void>
-    <void index="21">
-     <string>id_area_responsavel</string>
-    </void>
-    <void index="22">
-     <string>id_projeto</string>
-    </void>
-    <void index="23">
-     <string>id_resp_pelo_proj</string>
-    </void>
-    <void index="24">
-     <string>link_scopi</string>
-    </void>
-    <void index="25">
-     <string>matr_dir_adjunto</string>
-    </void>
-    <void index="26">
-     <string>matr_dir_executiva</string>
-    </void>
-    <void index="27">
-     <string>matricula_gestor_OE</string>
-    </void>
-    <void index="28">
-     <string>Nome_do_projeto</string>
-    </void>
-    <void index="29">
-     <string>nr_doc_form</string>
-    </void>
-    <void index="30">
-     <string>parentFolder</string>
-    </void>
-    <void index="31">
-     <string>publico_alvo</string>
-    </void>
-    <void index="32">
-     <string>resp_pelo_proj</string>
-    </void>
-    <void index="33">
-     <string>Selecao_OE</string>
-    </void>
-    <void index="34">
-     <string>Sumario_executi</string>
-    </void>
-    <void index="35">
-     <string>Valida_PE</string>
     </void>
    </array>
   </void>
