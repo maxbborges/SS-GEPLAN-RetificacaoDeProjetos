@@ -288,8 +288,7 @@ function verificaPDF() {
     $("#div_06").hide();
     $("#div_07").hide();
 
-    var nr_pasta = "6792";
-    $("[name='nr_pasta']").val(nr_pasta)
+    nr_pasta=$("[name='nr_pasta']").val()
     var nr_solicitacao = NUM_PROCESS;
     var nm_arquivo = "solic_" + nr_solicitacao + ".pdf";
 

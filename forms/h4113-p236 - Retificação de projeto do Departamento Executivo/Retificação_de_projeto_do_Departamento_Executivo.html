@@ -27,28 +27,12 @@
 <body class="fluig-style-guide">
 	<form class="totvs-form grid vertical create-form-components ui-sortable t0" name="createFormComponents"
 		style="padding-left: 10px; padding-right: 10px;">
-		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="doc_id">
-			<div class="form-input">
-				<div class="form-group">
-					<input type="hidden" class="form-control" name="doc_id" value="" placeholder="" data-size="big">
-				</div>
-			</div>
-		</div>
-		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="doc_id_assinado">
-			<div class="form-input">
-				<div class="form-group">
-					<input type="hidden" class="form-control" name="doc_id_assinado" value="" placeholder=""
-						data-size="big">
-				</div>
-			</div>
-		</div>
-		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="nr_pasta">
-			<div class="form-input">
-				<div class="form-group">
-					<input type="hidden" class="form-control" name="nr_pasta" value="" placeholder="" data-size="big">
-				</div>
-			</div>
-		</div>
+		<input type="hidden" class="form-control" name="doc_id" value="" placeholder="" data-size="big">
+		<input type="hidden" class="form-control" name="doc_id_assinado" value="" placeholder="" data-size="big">
+		<!-- PASTA HOMOLOGAÇÃO -->
+		<input type="hidden" class="form-control" name="nr_pasta" value="6792" placeholder="" data-size="big">
+		<!-- PASTA PRODUÇÃO -->
+		<!-- <input type="hidden" class="form-control" name="nr_pasta" value="7558" placeholder="" data-size="big"> -->
 		<h1 class="title-form-application">Retificação de Projetos</h1>
 		<div class="paragraph-is-required system-message-information alert alert-info" role="alert">Todos os campos com
 			* são de preenchimento obrigatório.</div>
@@ -262,12 +246,12 @@
 								</div>
 							</div>
 							<div class="col-sm-2">
-									<div class="form-input link_scopi">
-										<div class="form-group">
-											<label>Link</label>
-											<br>
-											<a id="btAbrirScopi"><button type="button"
-													class="btn btn-primary" onclick="btnLinkScopi()">Abrir no Scopi</button></a>
+								<div class="form-input link_scopi">
+									<div class="form-group">
+										<label>Link</label>
+										<br>
+										<a id="btAbrirScopi"><button type="button" class="btn btn-primary"
+												onclick="btnLinkScopi()">Abrir no Scopi</button></a>
 									</div>
 								</div>
 							</div>
@@ -622,12 +606,11 @@
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-sm-12">
-									<div class="form-input">
-										<label>Considerações dos ajuste solicitados</label>
-										<textarea class="form-control" rows="3"
-											name="Ajustes_conside"
-											placeholder="O solicitante deve inserir neste campo qualquer informação sobre os ajuste solicitados "
-											data-size="big" analytics="true" gooddataid="10">
+								<div class="form-input">
+									<label>Considerações dos ajuste solicitados</label>
+									<textarea class="form-control" rows="3" name="Ajustes_conside"
+										placeholder="O solicitante deve inserir neste campo qualquer informação sobre os ajuste solicitados "
+										data-size="big" analytics="true" gooddataid="10">
 										</textarea>
 								</div>
 							</div>
