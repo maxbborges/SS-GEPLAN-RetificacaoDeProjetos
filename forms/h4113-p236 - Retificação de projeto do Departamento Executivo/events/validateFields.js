@@ -21,15 +21,15 @@ function validateForm(form) {
     if ((form.getValue("data_fim") == null || form.getValue("data_fim") == "") && (getValue('WKNumProces') == null || (getValue('WKNumProces') > 0 && getValue('WKCompletTask') == 'true'))) {
         throw "Data de fim do projeto aprovado n\u00E3o pode ser vazio.";
     }
-    // if ((form.getValue("column1_3___1") == null || form.getValue("column1_3___1") == "") && (getValue('WKNumProces') == null || (getValue('WKNumProces') > 0 && getValue('WKCompletTask') == 'true'))) {
-    //     throw "Retificação n\u00E3o pode ser vazio.";
-    // }
-    // if ((form.getValue("column6_3___1") == null || form.getValue("column6_3___1") == "") && (getValue('WKNumProces') == null || (getValue('WKNumProces') > 0 && getValue('WKCompletTask') == 'true'))) {
-    //     throw "Para em retificação n\u00E3o pode ser vazio.";
-    // }
-    // if ((form.getValue("column7_3___1") == null || form.getValue("column7_3___1") == "") && (getValue('WKNumProces') == null || (getValue('WKNumProces') > 0 && getValue('WKCompletTask') == 'true'))) {
-    //     throw "Justificativa em retificação n\u00E3o pode ser vazio.";
-    // }
+    if ((form.getValue("column1_3___1") == null || form.getValue("column1_3___1") == "") && (getValue('WKNumProces') == null || (getValue('WKNumProces') > 0 && getValue('WKCompletTask') == 'true'))) {
+        throw "Retificação n\u00E3o pode ser vazio.";
+    }
+    if ((form.getValue("column6_3___1") == null || form.getValue("column6_3___1") == "") && (getValue('WKNumProces') == null || (getValue('WKNumProces') > 0 && getValue('WKCompletTask') == 'true'))) {
+        throw "Para em retificação n\u00E3o pode ser vazio.";
+    }
+    if ((form.getValue("column7_3___1") == null || form.getValue("column7_3___1") == "") && (getValue('WKNumProces') == null || (getValue('WKNumProces') > 0 && getValue('WKCompletTask') == 'true'))) {
+        throw "Justificativa em retificação n\u00E3o pode ser vazio.";
+    }
     if ((form.getValue("doc_id") == null || 
     		form.getValue("doc_id") == "" || 
     		form.getValue("nr_pasta") == "" || 

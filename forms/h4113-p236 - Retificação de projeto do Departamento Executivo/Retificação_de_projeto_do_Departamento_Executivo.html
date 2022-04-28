@@ -294,7 +294,7 @@
 									<tbody>
 										<tr class="tableBodyRow">
 											<td class="fs-v-align-middle colunaRetificacao_01">
-												<select class="form-control" name="slc_retificacao_01">
+												<select class="form-control" name="slc_retificacao_01" onchange="tipoRetificacao(this)">
 													<option value="" disabled>Selecione uma opção</option>
 													<option value="Alteração na previsão de fim do projeto;">
 														Alteração na previsão de fim do
@@ -320,10 +320,10 @@
 												<input type="text" class="form-control" name="column1_3" readonly>
 											</td>
 											<td class="fs-v-align-middle colunaDe_01">
-												<select class="form-control" name="indicador_01">
+												<select class="form-control" name="indicador_01" onchange="onChangeIndicadores(this)">
 													<option value="">Selecione um indicador</option>
 												</select>
-												<select class="form-control" name="acao_01">
+												<select class="form-control" name="acao_01" onchange="onChangeAcoes(this)">
 													<option value="">Selecione uma ação</option>
 												</select>
 												<input type="text" class="form-control" name="column2_3" value=""

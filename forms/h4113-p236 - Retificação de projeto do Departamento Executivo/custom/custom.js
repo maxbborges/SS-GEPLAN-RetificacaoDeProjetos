@@ -21,13 +21,28 @@ $(document).ready(function () {
 });
 
 function init() {
-    if (ATIVIDADE != 5 && ATIVIDADE != 0 && ATIVIDADE != 10) {
+    if (ATIVIDADE != 5 && ATIVIDADE != 0) {
         setTimeout(() => {
-            linhasColunas = $('[tablename="tabledetailname3"] tbody tr textarea')
-            for (i = 2; i < linhasColunas.length; i++) {
-                $(linhasColunas[i]).prop("readonly", true);
+            
+            if (ATIVIDADE!=10){
+                $(".bpm-mobile-trash-column").hide()
+                $('#Valor_por_entid_div .btn').hide()
+
+                linhasColunas = $('[tablename="tabledetailname3"] tbody tr textarea')
+                for (i = 2; i < linhasColunas.length; i++) {
+                    $(linhasColunas[i]).prop("readonly", true);
+                }
+            } else {
+                if (MODE == 'VIEW') {
+                    $('#Valor_por_entid_div .btn').hide()
+                }
             }
-            $('[tablename="tabledetailname3"] tbody tr select').remove()
+
+            // OCULTA OS SELECTS PREENCHIDOS DA TABELA (VIEW) 
+            var selects = $('[tablename="tabledetailname3"] tbody tr select')
+            for (i = 3; i < selects.length; i++) {
+                $(selects[i]).hide()
+            }
 
             // OCULTA OS INPUTS VAZIO DA TABELA (VIEW)
             var inputs = $('[tablename="tabledetailname3"] tbody tr input')
@@ -48,19 +63,14 @@ function init() {
                     texto == 'Alteração na(s) meta(s) estipulada(s) no(s) indicador(es) de desempenho' ||
                     texto == 'Variação orçamentária maior que 25% da proposta inicial' ||
                     texto == 'Alteração no escopo (cancelamento de ações)') {
-                    $(inputs[i]).remove()
+                    $(inputs[i]).hide()
                 }
             }
 
             if (MODE != 'VIEW') {
                 $('tr:first-child>th:first-child').remove()
             }
-            $(".bpm-mobile-trash-column").remove()
-            $('#Valor_por_entid_div .btn').hide()
         }, 500)
-        if ($('[name="Ajustes_conside"]').text()==''||$('[name="Ajustes_conside"]').text()=='\xa0'){
-            $("#div_07").hide()
-        }
     }
 
     if (ATIVIDADE != 27) {
@@ -72,10 +82,6 @@ function init() {
     }
 
     if (ATIVIDADE == 5 || ATIVIDADE == 0) {
-        setTimeout(() => {
-            $('tbody tr i')[1].remove()
-        }, 500)
-        // wdkAddChild('tabledetailname3');
         $('#div_02').hide()
         $('#div_03').hide()
         $('#div_04').hide()
@@ -109,24 +115,6 @@ function init() {
         if (MODE == 'VIEW') {
             $('#div_06').hide()
         }
-    } else if (ATIVIDADE == 10) {
-        if (MODE != 'VIEW') {
-            setTimeout(() => {
-                $('tbody tr i')[1].remove()
-            }, 500)
-        }
-
-        var inputs = $('[tablename="tabledetailname3"] tbody tr')
-        for (i = 1; i < inputs.length; i++) {
-            $('[name="slc_retificacao_01___' + i + '"').val('')
-            $('[name="slc_retificacao_01___' + i + '"').hide()
-            $('[name="column2_3___' + i + '"').hide()
-            $('[name="column3_3___' + i + '"').hide()
-            $('[name="acao_01___' + i + '"').prop('disabled', true)
-            $('[name="indicador_01___' + i + '"').prop('disabled', true)
-        }
-    } else if (ATIVIDADE==50||ATIVIDADE==52||ATIVIDADE==54){
-        // $('.link_scopi').remove()
     }
 }
 
@@ -143,7 +131,6 @@ function carregarLink() {
     let link = (projectId == "" || projectId == null)
         ? "" : "https://system.scopi.com.br/#/projects/" + projectId + "/actions";
     $("[name='link_scopi']").val(link);
-    // $("#btAbrirScopi").prop('href', link);
 }
 
 function carregarUsuarioFluig(scopiUserId) {
@@ -218,9 +205,7 @@ function setSelectedZoomItem(selectedItem) {
 
         carregarUsuarioFluig(selectedItem.coordinator_id)
         carregarObjetivoEstrategico(selectedItem.objective_id)
-        // carregaDadosRetificacao(selectedItem.ID)
         carregarLink()
-        addLineTable()
     }
 
 }
@@ -304,7 +289,7 @@ function verificaPDF() {
 
 function addLineTable() {
     idProjeto = $('[name="id_do_projeto"]').val()
-    // var idProjeto = '4760'
+
     if (idProjeto == '') {
         FLUIGC.toast({
             message: 'Selecione um projeto!',
@@ -315,133 +300,151 @@ function addLineTable() {
     }
     setTimeout(() => {
         wdkAddChild('tabledetailname3')
+        if (newId==1){
+            $('[tablename="tabledetailname3"] tr .bpm-mobile-trash-column i')[1].remove()
+        }
 
-        $('#indicador_01___' + newId).prop('disabled', true).hide()
-        $('#acao_01___' + newId).prop('disabled', true).hide()
+        $('#indicador_01___' + newId).hide()
+        $('#acao_01___' + newId).hide()
         $('#column1_3___' + newId).hide()
         $('#column2_3___' + newId).hide()
         $('#column3_3___' + newId).hide()
         $('#column4_3___' + newId).hide()
         $('#column5_3___' + newId).hide()
-
-        $("#slc_retificacao_01___" + newId).change(function () {
-            $("#column1_3___" + newId).val($(this).val())
-
-            if ($(this).val() == "Alteração na previsão de fim do projeto;") {
-                // REMOVE AS OPTIONS DO SELECT INDICADOR_01
-                optionsIndicador = $('#indicador_01___' + newId + ' option')
-                for (i = 1; i < optionsIndicador.length; i++) {
-                    optionsIndicador[i].remove()
-                }
-
-                // REMOVE AS OPTIONS DO SELECT ACAO_01
-                optionsAcao = $('#acao_01___' + newId + ' option')
-                for (i = 1; i < optionsAcao.length; i++) {
-                    optionsAcao[i].remove()
-                }
-
-                // CARREGA AS DATAS
-                dados = carregaDadosRetificacao(idProjeto)
-
-                // PREENCHE OS DADOS RECUPERADOS E LIMPA OS OUTROS CAMPOS
-                $('#column4_3___' + newId).val("").hide()
-                dataBr = (dados.values[0].prevision_end).split("-")
-                dataBr = dataBr[2] + "/" + dataBr[1] + "/" + dataBr[0]
-                $('#column5_3___' + newId).val("Data Final Atual: " + dataBr).show()
-                $('#column2_3___' + newId).val('').hide()
-                $('#column3_3___' + newId).val('').hide()
-                $('#indicador_01___' + newId).prop('disabled', true).hide()
-                $('#acao_01___' + newId).prop('disabled', true).hide()
-            } else if ($(this).val() == "Variação orçamentária maior que 25% da proposta inicial;") {
-                // REMOVE AS OPTIONS DO SELECT INDICADOR_01
-                optionsIndicador = $('#indicador_01___' + newId + ' option')
-                for (i = 1; i < optionsIndicador.length; i++) {
-                    optionsIndicador[i].remove()
-                }
-
-                // REMOVE AS OPTIONS DO SELECT ACAO_01
-                optionsAcao = $('#acao_01___' + newId + ' option')
-                for (i = 1; i < optionsAcao.length; i++) {
-                    optionsAcao[i].remove()
-                }
-
-                // CARREGA OS VALORES
-                dados = carregaDadosRetificacao(idProjeto)
-
-                // PREENCHE OS DADOS RECUPERADOS E LIMPA OS OUTROS CAMPOS
-                $('#column5_3___' + newId).val("").hide()
-                $('#column4_3___' + newId).val("Valor Atual: " + dados.values[0].expenses).show()
-                $('#column2_3___' + newId).val('').hide()
-                $('#column3_3___' + newId).val('').hide()
-                $('#indicador_01___' + newId).prop('disabled', true).hide()
-                $('#acao_01___' + newId).prop('disabled', true).hide()
-            
-            }else if($(this).val() == "Alteração no escopo (inclusão);"){
-                // LIMPA TODOS OS CAMPOS
-                $('#indicador_01___' + newId).prop('disabled', true).hide()
-                $('#acao_01___' + newId).prop('disabled', true).hide()
-                $('#column2_3___' + newId).val('').hide()
-                $('#column3_3___' + newId).val('').hide()
-                $('#column4_3___' + newId).val('').hide()
-                $('#column5_3___' + newId).val("").hide()
-            } else {
-                // PREENCHE OS DADOS RECUPERADOS E LIMPA OS OUTROS CAMPOS
-                $('#column5_3___' + newId).val("").hide()
-                $('#column4_3___' + newId).val("").hide()
-
-                if ($(this).val() == 'Alteração no escopo (cancelamento de ações);') {
-                    // REMOVE AS OPTIONS DO SELECT INDICADOR_01
-                    optionsIndicador = $('#indicador_01___' + newId + ' option')
-                    for (i = 1; i < optionsIndicador.length; i++) {
-                        optionsIndicador[i].remove()
-                    }
-
-                    // CARREGA AS AÇÕES
-                    dados = carregaDadosRetificacao(idProjeto)
-                    fases = (dados.values[0].phases).split(";")
-                    for (i = 0; i < fases.length - 1; i++) {
-                        $('#acao_01___' + newId).append($('<option>', {
-                            value: fases[i],
-                            text: fases[i]
-                        }));
-                    }
-
-                    // DESABILITA O SELECT INDICADOR_01 E HABILITA O ACAO_01
-                    $('#acao_01___' + newId).prop('disabled', false).show()
-                    $('#indicador_01___' + newId).prop('disabled', true).hide()
-                    $('#column2_3___' + newId).val('').hide()
-                } else if ($(this).val() == "Alteração na(s) meta(s) estipulada(s) no(s) indicador(es) de desempenho;") {
-                    // REMOVE AS OPTIONS DO SELECT ACAO_01
-                    optionsAcao = $('#acao_01___' + newId + ' option')
-                    for (i = 1; i < optionsAcao.length; i++) {
-                        optionsAcao[i].remove()
-                    }
-
-                    // CARREGA OS INDICADORES
-                    indicadores = carregaIndicadores()
-                    for (i = 0; i < (indicadores.values).length - 1; i++) {
-                        $('#indicador_01___' + newId).append(
-                            $('<option>', {
-                                value: indicadores.values[i].name,
-                                text: indicadores.values[i].name
-                            })
-                        );
-                    }
-
-                    // DESABILITA O SELECT ACAO_01 E HABILITA O INDICADOR_01
-                    $('#indicador_01___' + newId).prop('disabled', false).show()
-                    $('#acao_01___' + newId).prop('disabled', true).hide()
-                    $('#column3_3___' + newId).val('').hide()
-                }
-            }
-        });
-
-        $('#indicador_01___' + newId).on("change", function () {
-            $('#column2_3___' + newId).val($(this).val())
-        })
-
-        $('#acao_01___' + newId).on("change", function () {
-            $('#column3_3___' + newId).val($(this).val())
-        })
     }, 100)
+}
+
+function tipoRetificacao(elem){
+    idProjeto = $('[name="id_do_projeto"]').val()
+    elemento=$(elem)
+    nomeElemento = elemento.attr("name")
+    idElemento = nomeElemento[nomeElemento.length -1];
+
+    $('[name="column1_3___' + idElemento+'"').val(elemento.val())
+
+    if (elemento.val() == "Alteração na previsão de fim do projeto;") {
+        // REMOVE AS OPTIONS DO SELECT INDICADOR_01
+        optionsIndicador = $('[name="indicador_01___' + idElemento + '"] option')
+        for (i = 1; i < optionsIndicador.length; i++) {
+            optionsIndicador[i].remove()
+        }
+
+        // REMOVE AS OPTIONS DO SELECT ACAO_01
+        optionsAcao = $('[name="acao_01___' + idElemento + '"] option')
+        for (i = 1; i < optionsAcao.length; i++) {
+            optionsAcao[i].remove()
+        }
+
+        // CARREGA AS DATAS
+        dados = carregaDadosRetificacao(idProjeto)
+
+        // PREENCHE OS DADOS RECUPERADOS E LIMPA OS OUTROS CAMPOS
+        $('[name="column4_3___' + idElemento+'"]').val("").hide()
+        dataBr = (dados.values[0].prevision_end).split("-")
+        dataBr = dataBr[2] + "/" + dataBr[1] + "/" + dataBr[0]
+        $('[name="column5_3___' + idElemento+'"]').val("Data Final Atual: " + dataBr).show()
+        $('[name="column2_3___' + idElemento+'"]').val('').hide()
+        $('[name="column3_3___' + idElemento+'"]').val('').hide()
+        // $('[name="indicador_01___' + idElemento+'"]').prop('disabled', true).hide()
+        // $('[name="acao_01___' + idElemento+'"]').prop('disabled', true).hide()
+        $('[name="indicador_01___' + idElemento+'"]').hide()
+        $('[name="acao_01___' + idElemento+'"]').hide()
+    } else if (elemento.val() == "Variação orçamentária maior que 25% da proposta inicial;") {
+        // REMOVE AS OPTIONS DO SELECT INDICADOR_01
+        optionsIndicador = $('[name="indicador_01___' + idElemento + '"] option')
+        for (i = 1; i < optionsIndicador.length; i++) {
+            optionsIndicador[i].remove()
+        }
+
+        // REMOVE AS OPTIONS DO SELECT ACAO_01
+        optionsAcao = $('[name="acao_01___' + idElemento + '"] option')
+        for (i = 1; i < optionsAcao.length; i++) {
+            optionsAcao[i].remove()
+        }
+
+        // CARREGA OS VALORES
+        dados = carregaDadosRetificacao(idProjeto)
+
+        // PREENCHE OS DADOS RECUPERADOS E LIMPA OS OUTROS CAMPOS
+        $('[name="column5_3___' + idElemento+'"]').val("").hide()
+        $('[name="column4_3___' + idElemento+'"]').val("Valor Atual: " + dados.values[0].expenses).show()
+        $('[name="column2_3___' + idElemento+'"]').val('').hide()
+        $('[name="column3_3___' + idElemento+'"]').val('').hide()
+        $('[name="indicador_01___' + idElemento+'"]').hide()
+        $('[name="acao_01___' + idElemento+'"]').hide()
+    
+    }else if(elemento.val() == "Alteração no escopo (inclusão);"){
+        // LIMPA TODOS OS CAMPOS
+        $('[name="indicador_01___' + idElemento+'"]').hide()
+        $('[name="acao_01___' + idElemento+'"]').hide()
+        $('[name="column2_3___' + idElemento+'"]').val('').hide()
+        $('[name="column3_3___' + idElemento+'"]').val('').hide()
+        $('[name="column4_3___' + idElemento+'"]').val('').hide()
+        $('[name="column5_3___' + idElemento+'"]').val("").hide()
+    } else {
+        // PREENCHE OS DADOS RECUPERADOS E LIMPA OS OUTROS CAMPOS
+        $('[name="column5_3___' + idElemento+'"]').val("").hide()
+        $('[name="column4_3___' + idElemento+'"]').val("").hide()
+
+        if (elemento.val() == 'Alteração no escopo (cancelamento de ações);') {
+            // REMOVE AS OPTIONS DO SELECT INDICADOR_01
+            optionsIndicador = $('[name="indicador_01___' + idElemento + '"] option')
+            for (i = 1; i < optionsIndicador.length; i++) {
+                optionsIndicador[i].remove()
+            }
+
+            // CARREGA AS AÇÕES
+            dados = carregaDadosRetificacao(idProjeto)
+            fases = (dados.values[0].phases).split(";")
+            for (i = 0; i < fases.length - 1; i++) {
+                $('[name="acao_01___' + idElemento).append($('<option>', {
+                    value: fases[i],
+                    text: fases[i]
+                }));
+            }
+
+            // DESABILITA O SELECT INDICADOR_01 E HABILITA O ACAO_01
+            $('[name="indicador_01___' + idElemento+'"]').hide()
+            $('[name="acao_01___' + idElemento+'"]').show()
+            $('[name="column2_3___' + idElemento+'"]').val('').hide()
+        } else if (elemento.val() == "Alteração na(s) meta(s) estipulada(s) no(s) indicador(es) de desempenho;") {
+            // REMOVE AS OPTIONS DO SELECT ACAO_01
+            optionsAcao = $('[name="acao_01___' + idElemento + '"] option')
+            for (i = 1; i < optionsAcao.length; i++) {
+                optionsAcao[i].remove()
+            }
+
+            // CARREGA OS INDICADORES
+            indicadores = carregaIndicadores()
+            for (i = 0; i < (indicadores.values).length - 1; i++) {
+                $('[name="indicador_01___' + idElemento+'"]').append(
+                    $('<option>', {
+                        value: indicadores.values[i].name,
+                        text: indicadores.values[i].name
+                    })
+                );
+            }
+
+            // DESABILITA O SELECT ACAO_01 E HABILITA O INDICADOR_01
+            $('[name="indicador_01___' + idElemento+'"]').show()
+            $('[name="acao_01___' + idElemento+'"]').hide()
+            $('[name="column3_3___' + idElemento+'"]').val('').hide()
+        }
+    }
+}
+
+function onChangeAcoes(elem){
+    elemento=$(elem)
+    nomeElemento = elemento.attr("name")
+    idElemento = nomeElemento[nomeElemento.length -1];
+
+    $('[name="column3_3___' + idElemento+'"]').val(elemento.val())
+}
+
+function onChangeIndicadores(elem){
+    elemento=$(elem)
+    nomeElemento = elemento.attr("name")
+    idElemento = nomeElemento[nomeElemento.length -1];
+
+    $('[name="column2_3___' + idElemento+'"]').val(elemento.val())
 }
